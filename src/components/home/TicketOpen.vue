@@ -3,18 +3,17 @@
 </template>
 
 <script>
-import moment from "moment";
+import moment from 'moment';
 
 export default {
   data() {
-    var today = moment();
-    var dday = moment("2019-7-24");
-    console.log({today, dday})
-    const diffDays = dday.diff(today, "days");
+    const today = moment();
+    const dday = moment('2019-7-24');
+    const diffDays = dday.diff(today, 'days');
     return {
-      diffDays
+      diffDays,
     };
-  }
+  },
 };
 </script>
 

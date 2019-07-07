@@ -1,6 +1,5 @@
 <template>
   <div class="speaker">
-    <!-- <div id="chevron" /> -->
     <div class="name-container">
       <div class="name-background"/>
       <span>{{name}}</span>
@@ -12,7 +11,7 @@
 
 <script>
 export default {
-  props: ["image", "name", "description"]
+  props: ['image', 'name', 'description'],
 };
 </script>
 
@@ -62,34 +61,5 @@ export default {
     font-style: italic;
     font-weight: bold;
   }
-}
-
-#chevron {
-  position: relative;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 60px;
-  width: 200px;
-}
-#chevron:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 51%;
-  background: red;
-  transform: skew(0deg, 6deg);
-}
-#chevron:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background: red;
-  transform: skew(0deg, -6deg);
 }
 </style>

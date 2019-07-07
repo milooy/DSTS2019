@@ -1,0 +1,56 @@
+<template>
+  <div class="sponsor-section">
+    <div class="sponsor-grade">{{grade}}</div>
+    <div class="sponsor-list">
+      <div
+        class="sponsor"
+        :style="sponsorStyle"
+        v-for="sponsor in sponsorList"
+        :key="sponsor.name">
+        <img :src="sponsor.image">
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ["grade", "sponsorList", "height", "width"],
+  computed: {
+    sponsorStyle() {
+      return {
+        width: this.width,
+        height: this.height,
+      }
+    },
+  }
+
+};
+</script>
+
+<style scoped lang="scss">
+.sponsor-list {
+  display: flex;
+  justify-content: center;
+}
+.sponsor-grade {
+  text-align: center;
+  font-weight: bold;
+}
+.sponsor-section {
+  margin-top: 40px;
+}
+.sponsor {
+  background: white;
+  padding: 20px 30px;
+  margin: 13px;
+  /* width: 160px;
+  height: 110px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 80%;
+  }
+}
+</style>

@@ -18,8 +18,8 @@
 <script>
 export default {
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 

@@ -33,4 +33,10 @@ body {
   color: #2c3e50;
 }
 
+.contents {
+  padding: 20px 15px 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 </style>
