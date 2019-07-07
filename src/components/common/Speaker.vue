@@ -1,6 +1,10 @@
 <template>
   <div class="speaker">
-    <div class="name">{{name}}</div>
+    <!-- <div id="chevron" /> -->
+    <div class="name-container">
+      <div class="name-background"/>
+      <span>{{name}}</span>
+    </div>
     <img :src="image">
     <div class="description">{{description}}</div>
   </div>
@@ -20,20 +24,32 @@ export default {
   img {
     width: 100%;
   }
-  .name {
-    font-weight: bold;
+  .name-container {
     position: relative;
-    background: #2f3165;
-    color: white;
     left: -12px;
     top: 25px;
-    width: 5.5rem;
-    text-align: center;
-    border: 3px solid white;
+    .name-background {
+      font-weight: bold;
+      background: #2f3165;
+      color: white;
+      width: 5.5rem;
+      height: 2.5rem;
+      text-align: center;
+      /* border: 3px solid white; */
+      transform: skew(6deg);
+    }
+    span {
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 11px;
+      font-weight: bold;
+    }
   }
   .description {
     font-size: 0.8rem;
     background: #000000c4;
+    border-left: 4px solid #e8493e;
     color: white;
     position: relative;
     top: -38px;
@@ -46,5 +62,34 @@ export default {
     font-style: italic;
     font-weight: bold;
   }
+}
+
+#chevron {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 60px;
+  width: 200px;
+}
+#chevron:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  transform: skew(0deg, 6deg);
+}
+#chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+  transform: skew(0deg, -6deg);
 }
 </style>
