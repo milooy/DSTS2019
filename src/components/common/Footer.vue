@@ -44,7 +44,6 @@
 import backgroundImage from "@/assets/background.png";
 
 export default {
-  name: "Footer",
   data() {
     return {
       backgroundImage

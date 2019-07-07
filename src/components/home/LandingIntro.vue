@@ -6,9 +6,9 @@
     </h1>
     <div class="info-container">
       <div class="organizor-container">
-        <img alt="LBD logo" src="../assets/logos/lbd-logo-white.png">
+        <img alt="LBD logo" src="@/assets/logos/lbd-logo-white.png">
         <div>X</div>
-        <img alt="DataItTalks logo" src="../assets/logos/DataItTalks-white.png">
+        <img alt="DataItTalks logo" src="@/assets/logos/DataItTalks-white.png">
       </div>
       <div class="venue-container">
         <div>2019.08.03 SAT 11:00 - 18:00</div>
@@ -18,8 +18,8 @@
     <div class="powered-container">
       <div>Powered by</div>
       <div :style="{display: 'flex'}">
-        <img alt="Zepl logo" src="../assets/logos/zepl-logo.png">
-        <img alt="DataItGirls logo" src="../assets/logos/DataItGirls_CI.png">
+        <img alt="Zepl logo" src="@/assets/logos/zepl-logo.png">
+        <img alt="DataItGirls logo" src="@/assets/logos/DataItGirls_CI.png">
       </div>
     </div>
   </div>
@@ -29,7 +29,6 @@
 import backgroundImage from "@/assets/background.png";
 
 export default {
-  name: "LandingIntro",
   data() {
     return {
       backgroundImage

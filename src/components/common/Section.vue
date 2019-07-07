@@ -9,7 +9,6 @@
 
 <script>
 export default {
-  name: "HelloWorld",
   props: ['title'],
 };
 </script>

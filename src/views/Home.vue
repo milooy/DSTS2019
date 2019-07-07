@@ -19,14 +19,20 @@
       </div>
     </Section>
     <TicketOpen />
+    <Section
+      title="Speakers"
+    >
+      <Speakers />
+    </Section>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import LandingIntro from '@/components/LandingIntro.vue';
-import Section from '@/components/Section.vue';
-import TicketOpen from '@/components/TicketOpen.vue';
+import LandingIntro from '@/components/home/LandingIntro.vue';
+import Section from '@/components/common/Section.vue';
+import TicketOpen from '@/components/home/TicketOpen.vue';
+import Speakers from '@/components/home/Speakers.vue';
 
 export default {
   name: 'home',
@@ -34,6 +40,7 @@ export default {
     LandingIntro,
     Section,
     TicketOpen,
+    Speakers,
   },
   data() {
     return {
