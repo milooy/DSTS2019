@@ -1,6 +1,8 @@
 <template>
   <div class="contents">
-    <div class="ticket-open-container">경기 스케쥴 보러가기</div>
+    <router-link to="/timetable" class="router-link">
+      <div class="ticket-open-container">경기 스케쥴 보러가기</div>
+    </router-link>
   </div>
 </template>
 
@@ -12,6 +14,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+a {
+  text-decoration: none;
+}
 .ticket-open-container {
   background: #2f3065;
   text-align: center;
@@ -24,6 +30,7 @@ export default {
   cursor: pointer;
   margin-top: -50px;
   color: white;
+
 
   &:hover {
     background: #e4ff60;
