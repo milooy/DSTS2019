@@ -17,8 +17,8 @@
       </tr>
       <tr>
         <td>11:20 ~ 11:50(30분)</td>
-        <td>세션</td>
-        <td>세션</td>
+        <td><SessionTd :data="sessionList[0]" /></td>
+        <td><SessionTd :data="sessionList[1]" /></td>
         <td rowspan="2">튜토리얼1</td>
       </tr>
       <tr>
@@ -35,8 +35,8 @@
       </tr>
       <tr>
         <td>13:05 ~ 13:35(30분)</td>
-        <td>세션</td>
-        <td>세션</td>
+        <td><SessionTd :data="sessionList[0]" /></td>
+        <td><SessionTd :data="sessionList[1]" /></td>
         <td>튜토리얼1</td>
       </tr>
       <tr>
@@ -45,8 +45,8 @@
       </tr>
       <tr>
         <td>13:40 ~ 14:10(30분)</td>
-        <td>세션</td>
-        <td>세션</td>
+        <td><SessionTd :data="sessionList[0]" /></td>
+        <td><SessionTd :data="sessionList[1]" /></td>
         <td rowspan="3">튜토리얼2</td>
       </tr>
       <tr>
@@ -55,8 +55,8 @@
       </tr>
       <tr>
         <td>14:25 ~ 14:55(30분)</td>
-        <td>세션</td>
-        <td>세션</td>
+        <td><SessionTd :data="sessionList[0]" /></td>
+        <td><SessionTd :data="sessionList[1]" /></td>
       </tr>
       <tr>
         <td>14:55 ~ 15:00(5분)</td>
@@ -64,8 +64,8 @@
       </tr>
       <tr>
         <td>15:00 ~ 15:30(30분)</td>
-        <td>세션</td>
-        <td>세션</td>
+        <td><SessionTd :data="sessionList[0]" /></td>
+        <td><SessionTd :data="sessionList[1]" /></td>
         <td rowspan="4">Free Talk</td>
       </tr>
       <tr>
@@ -74,8 +74,8 @@
       </tr>
       <tr>
         <td>15:45 ~ 16:15(30분)</td>
-        <td>세션</td>
-        <td>세션</td>
+        <td><SessionTd :data="sessionList[0]" /></td>
+        <td><SessionTd :data="sessionList[1]" /></td>
       </tr>
       <tr>
         <td>16:15 ~ 16:30(15분)</td>
@@ -95,17 +95,22 @@
 
 <script>
 import backgroundImage from "@/assets/background.png";
+import SessionTd from "./SessionTd.vue";
+import { sessionList } from "./data.js";
 
 export default {
+  components: {
+    SessionTd,
+  },
   data() {
     return {
-      backgroundImage
+      backgroundImage,
+      sessionList,
     };
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .timetable {
   width: 100%;
@@ -113,7 +118,11 @@ export default {
 
 .timetable th,
 .timetable td {
-  border: 1px solid black;
+  border: 1px solid #d6d6d6;
+}
+
+td {
+  padding: 5px 8px;
 }
 
 </style>
