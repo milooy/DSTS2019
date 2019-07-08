@@ -7,7 +7,7 @@
     <div class="be-sponsor-container">
       <img :src="UniformImage">
       <div>
-        <h3>Be the sponsor</h3>
+        <h3>Become a sponsor</h3>
         <p>DSTS는 데이터를 사랑하는 모든 사람을 위한 비영리 컨퍼런스입니다.</p>
         <p>데이터의 중요성을 깊이 공감하는 후원사를 모십니다. 유니폼에 들어가는 회사 로고 외에 다양한 혜택을 드립니다.</p>
         <a
