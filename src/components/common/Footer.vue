@@ -58,7 +58,6 @@ export default {
   background: #e8493e;
   color: white;
   padding: 30px 15px;
-  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   font-size: 12px;

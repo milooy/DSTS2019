@@ -2,12 +2,9 @@
   <div class="sponsor-section">
     <div class="sponsor-grade">{{grade}}</div>
     <div class="sponsor-list">
-      <div
-        class="sponsor"
-        :style="sponsorStyle"
-        v-for="sponsor in sponsorList"
-        :key="sponsor.name">
-        <img :src="sponsor.image">
+      <div class="sponsor" :style="sponsorStyle" v-for="sponsor in sponsorList" :key="sponsor.name">
+        <img v-if="sponsor.image" :src="sponsor.image">
+        <span v-else>TBD</span>
       </div>
     </div>
   </div>
@@ -20,11 +17,10 @@ export default {
     sponsorStyle() {
       return {
         width: this.width,
-        height: this.height,
-      }
-    },
+        height: this.height
+      };
+    }
   }
-
 };
 </script>
 
@@ -44,13 +40,16 @@ export default {
   background: white;
   padding: 20px 30px;
   margin: 13px;
-  /* width: 160px;
-  height: 110px; */
   display: flex;
   justify-content: center;
   align-items: center;
   img {
     width: 80%;
+  }
+
+  span {
+    color: #c3c3c3;
+    font-size: 1rem;
   }
 }
 </style>

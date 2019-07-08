@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 .speaker-list {
   display: flex;
   justify-content: space-between;
