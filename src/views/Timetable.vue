@@ -2,7 +2,6 @@
   <div class="home">
     <TimetableIntro />
     <Table />
-    
   </div>
 </template>
 

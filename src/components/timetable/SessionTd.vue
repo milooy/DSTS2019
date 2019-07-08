@@ -27,7 +27,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .session-td {
-  /* display: flex; */
+  cursor: pointer;
+  &:hover {
+    background: #e4ff60;
+  }
 }
 
 .title {
