@@ -70,7 +70,7 @@ export default {
 
 <style scoped lang="scss">
   .home {
-    margin-top: -80px;
+    margin-top: -94px;
   }
 
   .schedule {

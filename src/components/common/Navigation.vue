@@ -7,8 +7,7 @@
       </div>
     </router-link>
     <div>
-      <router-link to="/schedule" class="router-link">Schedule</router-link>
-      <router-link to="/schedule" class="router-link">Timetable</router-link>
+      <router-link to="/timetable" class="router-link">Timetable</router-link>
       <router-link to="/speakers" class="router-link">Speakers</router-link>
       <router-link to="/about" class="buy-ticket">티켓 구매하기</router-link>
     </div>
@@ -29,7 +28,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 15px;
+  padding: 12px 30px;
 }
 
 a {
