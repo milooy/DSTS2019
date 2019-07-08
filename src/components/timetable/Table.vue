@@ -140,11 +140,9 @@ export default {
   },
   methods: {
     showDetail: function (id) {
-      console.log("힝", id, this)
       this.currentSessionId = id;
     },
     closeDetail: function (id) {
-      console.log("힝2")
       this.currentSessionId = null;
     },
   },

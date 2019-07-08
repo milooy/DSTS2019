@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="session-detail-container" v-if="data">
-      <div class="close" v-on:click="closeDetail">X</div>
-      <img :src="data.playerImage">
-      <div class="description-container">
+    <div class="session-detail-container" :class="{ active: data.title }">
+      <div class="close" v-on:click="handleClickClose">X</div>
+      <img :src="data.playerImage" :class="{ active: data.title }">
+      <div class="description-container" :class="{ active: data.title }">
         <div class="title">{{data.title}}</div>
         <div class="speaker-name">{{data.speakerName}}</div>
         <div class="desc">{{data.desc}}</div>
@@ -15,25 +15,26 @@
 <script>
 import YurimPlayer from "@/assets/speakers/player/yurim.png";
 import backgroundImage from "@/assets/background.png";
+import { sessionList } from "./data.js";
 
 export default {
-  props: ['data', 'closeDetail'],
-  data() {
-    return {
-      backgroundImage,
-      YurimPlayer
-    };
+  props: {
+    data: {
+      type: Object,
+      default: function() {
+        return {};
+      }
+    },
+    closeDetail: Function
   },
   methods: {
-    closeDetail: function () {
-      console.log("힝2")
+    handleClickClose: function() {
       this.closeDetail();
-    },
-  },
+    }
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .session-detail-container {
   background: #000000cf;
@@ -42,12 +43,24 @@ export default {
   left: 0;
   right: 0;
   height: 210px;
+  visibility: hidden;
+
+  &.active {
+    border: 5px solid red;
+    visibility: visible;
+  }
 
   img {
     position: fixed;
     bottom: 0;
     height: 400px;
-    left: 20px;
+    left: -80px;
+    transition: all ease 0.3s;
+    transition-delay: 0.1s;
+
+    &.active {
+      left: 80px;
+    }
   }
 
   .close {
@@ -63,7 +76,13 @@ export default {
   display: inline-block;
   position: absolute;
   text-align: right;
-  right: 80px;
+  right: 0;
+  transition: right ease 0.2s;
+
+  /* 왜 여기는 안돼 */
+  &.active {
+    right: 80px;
+  }
 
   .title {
     font-size: 2.5rem;
@@ -73,6 +92,7 @@ export default {
     margin-top: -22px;
     padding: 3px 14px;
     font-style: italic;
+    display: inline-block;
   }
   .speaker-name {
     color: white;
