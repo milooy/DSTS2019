@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <LandingIntro />
+    <Marquee />
     <Section
       title="DSTS 2019"
     >
@@ -27,7 +28,7 @@
     <GoToTimeline />
     <Section
       title="Sponsors"
-      backgroundColor="#56b876"
+      backgroundColor="#5caf55"
       titleColor="white"
     >
       <Sponsors />
@@ -43,6 +44,7 @@ import TicketOpen from '@/components/home/TicketOpen.vue';
 import Speakers from '@/components/home/Speakers.vue';
 import GoToTimeline from '@/components/home/GoToTimeline.vue';
 import Sponsors from '@/components/home/Sponsors.vue';
+import Marquee from '@/components/common/Marquee.vue';
 
 export default {
   name: 'home',
@@ -53,6 +55,7 @@ export default {
     Speakers,
     GoToTimeline,
     Sponsors,
+    Marquee,
   },
   data() {
     return {
@@ -70,7 +73,6 @@ export default {
 
 <style scoped lang="scss">
   .home {
-    margin-top: -94px;
   }
 
   .schedule {

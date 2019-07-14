@@ -32,7 +32,6 @@ export default {
 
 <style scoped lang="scss">
   .home {
-    margin-top: -94px;
   }
 
   .schedule {

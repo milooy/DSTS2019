@@ -1,24 +1,32 @@
 <template>
   <div id="nav">
-    <router-link to="/">
-      <div class="logo">
-        <b>DSTS</b>2019
-        <b>!</b>
-      </div>
-    </router-link>
-    <div>
+    <div class="left-pane">
+      <router-link to="/">
+        <div class="logo">
+          <img :src="DSTSLogo" alt="DSTS logo">
+        </div>
+      </router-link>
+      <router-link to="/" class="router-link">About</router-link>
       <router-link to="/timetable" class="router-link">Timetable</router-link>
-      <router-link to="/speakers" class="router-link">Speakers</router-link>
-      <router-link to="/about" class="buy-ticket">티켓 구매하기</router-link>
+    </div>
+    <div>
+      <a href="/" class="register-button">REGISTER</a>
     </div>
   </div>
 </template>
 
 <script>
+import DSTSLogo from "@/assets/logos/dsts-logo.png";
+
 export default {
-  props: {
-    msg: String,
+  data() {
+    return {
+      DSTSLogo
+    };
   },
+  props: {
+    msg: String
+  }
 };
 </script>
 
@@ -26,42 +34,41 @@ export default {
 <style scoped lang="scss">
 #nav {
   display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   justify-content: space-between;
-  align-items: center;
   padding: 12px 30px;
+  align-items: center;
+  position: absolute;
+  width: 90%;
 }
 
-a {
-  font-family: "Teko", sans-serif;
-  font-size: 1.5rem;
+.left-pane {
+  display: flex;
+}
+
+.logo img {
+  cursor: pointer;
+  height: 64px;
+  margin-right: 30px;
+}
+
+.router-link {
+  margin: 10px 14px;
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
 }
 
-.logo {
-  font-size: 2rem;
-  font-family: "Teko", sans-serif;
-  font-weight: 300;
-  b {
-    font-weight: 600;
-  }
+.register-button {
+  width: 196px;
+  height: 48px;
+  border-radius: 32px;
+  background-color: #3ae9d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
 }
-
-.router-link {
-  text-decoration: underline;
-  margin: 0 5px;
-}
-
-.buy-ticket {
-  background: #e4ff60;
-  padding: 3px 10px;
-  color: black;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-family: 'Noto Sans KR', 'Avenir', sans-serif;
-  font-weight: bold;
-  margin-left: 10px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 6px 0px;
-}
-
 </style>

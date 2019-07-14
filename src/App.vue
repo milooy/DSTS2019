@@ -27,10 +27,11 @@ body {
 }
 
 #app {
-  font-family: 'Noto Sans KR', 'Avenir', sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  overflow-x: hidden;
 }
 
 .contents {

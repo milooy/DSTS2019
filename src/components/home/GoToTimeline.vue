@@ -24,7 +24,6 @@ a {
   padding: 15px 0;
   font-weight: bold;
   margin: 20px 0;
-  font-family: "Teko", sans-serif;
   font-size: 2rem;
   border: 10px solid #000000cf;
   cursor: pointer;

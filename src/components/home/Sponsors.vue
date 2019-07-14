@@ -21,8 +21,8 @@
 
 <script>
 import Sponsor from "@/components/common/Sponsor.vue";
-import ZeplLogo from "@/assets/logos/zepl-logo.png";
-import DataItGirlsLogo from "@/assets/logos/DataItGirls_CI.png";
+
+import { sponsors } from "@/assets/data/index.js";
 import UniformImage from "@/assets/sponsors/uniform.png";
 
 export default {
@@ -32,25 +32,7 @@ export default {
   data() {
     return {
       UniformImage,
-      platinumSponsorList: [
-        { name: "Zepl", image: ZeplLogo },
-        { name: "DataItGirls", image: DataItGirlsLogo }
-      ],
-      goldSponsorList: [
-        { name: "Zepl" },
-        { name: "Zepl" },
-        { name: "Zepl" }
-      ],
-      silverSponsorList: [
-        { name: "Zepl" },
-        { name: "Zepl" }
-      ],
-      bronzeSponsorList: [
-        { name: "Zepl" },
-        { name: "Zepl" },
-        { name: "Zepl" },
-        { name: "Zepl" }
-      ]
+      ...sponsors,
     };
   }
 };
