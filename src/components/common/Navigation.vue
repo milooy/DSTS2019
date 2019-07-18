@@ -6,7 +6,7 @@
           <img :src="DSTSLogo" alt="DSTS logo">
         </div>
       </router-link>
-      <router-link to="/" class="router-link">About</router-link>
+      <router-link to="/" class="router-link" exact>About</router-link>
       <router-link to="/timetable" class="router-link">Timetable</router-link>
     </div>
     <div>
@@ -58,6 +58,11 @@ export default {
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
+
+  &.router-link-active  {
+    text-decoration: underline;
+    cursor: default;
+  }
 }
 
 .register-button {

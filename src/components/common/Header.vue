@@ -1,26 +1,31 @@
 <template>
+<div>
+
   <div class="intro">
-    <h1>
-      Data Science is a
-      <br>Team Sports!
-    </h1>
+    <slot />
     <div class="info-container">
       <div>2019.08.03 SAT 11:00 - 18:00</div>
       <div>@Microsoft 광화문</div>
     </div>
     <img :src="mainImage" class="main-image" alt="main illustration">
   </div>
+  <Marquee/>
+</div>
 </template>
 
 <script>
 import backgroundImage from "@/assets/background.png";
 import mainImage from "@/assets/images/main-image.png";
+import Marquee from "@/components/common/Marquee.vue";
 
 export default {
+  components: {
+    Marquee,
+  },
   data() {
     return {
       backgroundImage,
-      mainImage
+      mainImage,
     };
   }
 };
@@ -48,7 +53,7 @@ h1 {
   color: white;
   line-height: 1.2em;
   margin: 0;
-  padding: 60px 0 90px;
+  /* padding: 60px 0 90px; */
   font-size: 3.5rem;
 }
 

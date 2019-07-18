@@ -1,42 +1,41 @@
 <template>
-  <div class="home">
-    <TimetableIntro />
-    <Table />
+  <div class="timetable">
+    <Header>
+      <h1>Timetable</h1>
+    </Header>
+    <Table/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TimetableIntro from '@/components/timetable/TimetableIntro.vue';
-import Table from '@/components/timetable/Table.vue';
+import Header from "@/components/common/Header.vue";
+import Table from "@/components/timetable/Table.vue";
 
 export default {
-  name: 'timetable',
+  name: "timetable",
   components: {
-    TimetableIntro,
     Table,
+    Header
   },
   data() {
-    return {
-    };
-  },
-
+    return {};
+  }
 };
 </script>
 
 <style scoped lang="scss">
-  .home {
+h1 {
+  padding: 40px 0;
+}
+
+.schedule {
+  display: flex;
+
+  .schedule-title {
+    font-weight: bold;
+    margin-right: 5px;
+    min-width: 10em;
   }
-
-  .schedule {
-    display: flex;
-
-    .schedule-title {
-      font-weight: bold;
-      margin-right: 5px;
-      min-width: 10em;
-    }
-  }
-
-
+}
 </style>
