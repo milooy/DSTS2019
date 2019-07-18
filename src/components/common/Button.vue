@@ -1,6 +1,6 @@
 <template>
   <div class="button">
-    <a v-if="href" :href="href">
+    <a v-if="href" :href="href" target="_blank">
       <slot/>
     </a>
     <router-link :to="to" v-else>

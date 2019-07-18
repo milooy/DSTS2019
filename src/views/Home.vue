@@ -17,6 +17,11 @@
     <Section>
       <Organizers />
     </Section>
+    <Section
+      backgroundColor="#5caf55"
+    >
+      <BecomeSponsor />
+    </Section>
   </div>
 </template>
 
@@ -29,6 +34,7 @@ import Speakers from '@/components/home/Speakers.vue';
 import Sponsors from '@/components/home/Sponsors.vue';
 import Intro from '@/components/home/Intro.vue';
 import Organizers from '@/components/home/Organizers.vue';
+import BecomeSponsor from '@/components/home/BecomeSponsor.vue';
 import Marquee from '@/components/common/Marquee.vue';
 
 export default {
@@ -42,6 +48,7 @@ export default {
     Marquee,
     Intro,
     Organizers,
+    BecomeSponsor,
   },
   data() {
     return {
