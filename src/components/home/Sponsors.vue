@@ -1,10 +1,11 @@
 <template>
   <div class="sponsor-container">
-    <Sponsor grade="Platinum" width="160px" height="100px" :sponsorList="platinumSponsorList"/>
-    <Sponsor grade="Gold" width="130px" height="80px" :sponsorList="goldSponsorList"/>
-    <Sponsor grade="Silver" width="100px" height="60px" :sponsorList="silverSponsorList"/>
-    <Sponsor grade="Bronze" width="80px" height="50px" :sponsorList="bronzeSponsorList"/>
-    <div class="be-sponsor-container">
+    <SectionTitle class="players-title">SPONSORS</SectionTitle>
+    <Sponsor grade="PLATINUM" width="160px" height="100px" :sponsorList="platinumSponsorList"/>
+    <Sponsor grade="GOLD" width="130px" height="80px" :sponsorList="goldSponsorList"/>
+    <Sponsor grade="SILVER" width="100px" height="60px" :sponsorList="silverSponsorList"/>
+    <Sponsor grade="BRONZE" width="80px" height="50px" :sponsorList="bronzeSponsorList"/>
+    <!-- <div class="be-sponsor-container">
       <img :src="UniformImage">
       <div>
         <h3>Become a sponsor</h3>
@@ -15,19 +16,21 @@
           target="_blank"
         >자세한 후원 안내</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import Sponsor from "@/components/common/Sponsor.vue";
+import SectionTitle from "@/components/common/SectionTitle.vue";
 
 import { sponsors } from "@/assets/data/index.js";
 import UniformImage from "@/assets/sponsors/uniform.png";
 
 export default {
   components: {
-    Sponsor
+    Sponsor,
+    SectionTitle,
   },
   data() {
     return {
@@ -39,16 +42,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.speaker-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.sponsor-container {
+  font-family: "Teko", sans-serif;
+  text-align: center;
 }
 
 .be-sponsor-container {
   display: flex;
-  background: white;
-  border: 10px solid #e4ff60;
+  background: #f6f6f6;
   margin: 30px 0 50px;
   padding: 15px;
   align-items: center;

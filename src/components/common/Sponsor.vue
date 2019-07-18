@@ -30,8 +30,8 @@ export default {
   justify-content: center;
 }
 .sponsor-grade {
-  text-align: center;
   font-weight: bold;
+  font-size: 15px;
 }
 .sponsor-section {
   margin-top: 40px;

@@ -11,7 +11,16 @@
 
 <script>
 export default {
-  props: ["href", "to"]
+  props: {
+    href: {
+      type: String,
+      default: null,
+    },
+    to: {
+      type: String,
+      default: null,
+    },
+  }
 };
 </script>
 

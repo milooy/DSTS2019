@@ -18,12 +18,6 @@ export default {
   },
   data() {
     return {
-      scheduleList: [
-        { title: '발표자 신청', content: '6월 20일 화요일 - 7월 7일 일요일' },
-        { title: '발표자 확정', content: '7월 14일 일요일' },
-        { title: '티켓 오픈(250장)', content: '7월 24일 일요일' },
-        { title: '행사 D-Day!', content: '8월 3일 토요일' },
-      ],
     };
   },
 

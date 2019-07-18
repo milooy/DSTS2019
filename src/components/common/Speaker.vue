@@ -19,7 +19,8 @@ export default {
 <style scoped lang="scss">
 .speaker {
   width: 220px;
-  margin: 0 5px 30px 0;
+  margin: 0 15px 30px 0;
+  flex-grow: 1;
 
   .speaker-info {
     display: flex;

@@ -10,11 +10,12 @@
       <Speakers />
     </Section>
     <Section
-      title="Sponsors"
-      backgroundColor="#5caf55"
-      titleColor="white"
+      backgroundColor="#f6f6f6"
     >
       <Sponsors />
+    </Section>
+    <Section>
+      <Organizers />
     </Section>
   </div>
 </template>
@@ -27,6 +28,7 @@ import TicketOpen from '@/components/home/TicketOpen.vue';
 import Speakers from '@/components/home/Speakers.vue';
 import Sponsors from '@/components/home/Sponsors.vue';
 import Intro from '@/components/home/Intro.vue';
+import Organizers from '@/components/home/Organizers.vue';
 import Marquee from '@/components/common/Marquee.vue';
 
 export default {
@@ -39,10 +41,10 @@ export default {
     Sponsors,
     Marquee,
     Intro,
+    Organizers,
   },
   data() {
     return {
-      DSTSEmblemImg,
     };
   },
 
