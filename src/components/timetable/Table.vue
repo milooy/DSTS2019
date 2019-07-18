@@ -24,7 +24,7 @@
         </tr>
         <tr>
           <td class="time">11:50 ~ 12:05 | 15분</td>
-          <td colspan="2">라톡1</td>
+          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
         </tr>
         <tr>
           <td class="time">12:05 ~ 13:05 | 60분</td>
@@ -66,8 +66,8 @@
         </tr>
         <tr>
           <td class="time">14:10 ~ 14:25 | 15분</td>
-          <td colspan="3">라톡2</td>
-        </tr>
+          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
+          </tr>
         <tr>
           <td class="time">14:25 ~ 14:55 | 30분</td>
           <td v-on:click="showDetail(0)">
@@ -101,8 +101,8 @@
         </tr>
         <tr>
           <td class="time">16:00 ~ 16:15 | 15분</td>
-          <td colspan="3">라톡3</td>
-        </tr>
+          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
+          </tr>
         <tr>
           <td class="time">16:15 ~ 16:45 | 30분</td>
           <td v-on:click="showDetail(0)">
@@ -115,8 +115,8 @@
         </tr>
         <tr>
           <td class="time">16:45 ~ 17:00 | 15분</td>
-          <td colspan="3">라톡4</td>
-        </tr>
+          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
+          </tr>
         <tr>
           <td class="time">17:00 ~ 17:15 | 15분</td>
           <td colspan="3" class="break">클로징</td>
@@ -135,13 +135,15 @@
 <script>
 import SessionDetail from "@/components/timetable/SessionDetail.vue";
 import SessionTd from "./SessionTd.vue";
+import LightningTd from "./LightningTd.vue";
 import backgroundImage from "@/assets/background.png";
 import { sessionList } from "./data.js";
 
 export default {
   components: {
     SessionTd,
-    SessionDetail
+    SessionDetail,
+    LightningTd,
   },
   data() {
     return {
@@ -174,7 +176,7 @@ export default {
 }
 
 td {
-  padding: 5px 8px;
+  padding: 10px 15px;
 }
 
 th {
