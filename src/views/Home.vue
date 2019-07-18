@@ -6,12 +6,9 @@
       <Intro />
     </Section>
     <TicketOpen />
-    <Section
-      title="Players"
-    >
+    <Section>
       <Speakers />
     </Section>
-    <GoToTimeline />
     <Section
       title="Sponsors"
       backgroundColor="#5caf55"
@@ -28,7 +25,6 @@ import LandingIntro from '@/components/home/LandingIntro.vue';
 import Section from '@/components/common/Section.vue';
 import TicketOpen from '@/components/home/TicketOpen.vue';
 import Speakers from '@/components/home/Speakers.vue';
-import GoToTimeline from '@/components/home/GoToTimeline.vue';
 import Sponsors from '@/components/home/Sponsors.vue';
 import Intro from '@/components/home/Intro.vue';
 import Marquee from '@/components/common/Marquee.vue';
@@ -40,7 +36,6 @@ export default {
     Section,
     TicketOpen,
     Speakers,
-    GoToTimeline,
     Sponsors,
     Marquee,
     Intro,

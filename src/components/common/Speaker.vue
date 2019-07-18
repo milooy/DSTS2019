@@ -1,15 +1,16 @@
 <template>
   <div class="speaker">
-    <div class="name-container">
-      <div class="name-background"/>
-      <span>{{name}}</span>
+    <div class="speaker-info">
+      <div class="speaker-name">{{name}}</div>
+      <div class="speaker-desc">{{description}}</div>
     </div>
-    <img :src="image">
-    <div class="description">{{description}}</div>
+    <div class="speaker-img" :style="{ backgroundImage: `url(${image})` }" />
+    <!-- <img :src="image"> -->
   </div>
 </template>
 
 <script>
+
 export default {
   props: ['image', 'name', 'description'],
 };
@@ -17,49 +18,39 @@ export default {
 
 <style scoped lang="scss">
 .speaker {
-  width: 170px;
-  margin: 10px;
+  width: 220px;
+  margin: 0 5px 30px 0;
 
-  img {
-    width: 100%;
-  }
-  .name-container {
-    position: relative;
-    left: -12px;
-    top: 25px;
-    .name-background {
-      font-weight: bold;
-      background: #2f3165;
-      color: white;
-      width: 5.5rem;
-      height: 2.5rem;
-      text-align: center;
-      /* border: 3px solid white; */
-      transform: skew(6deg);
-    }
-    span {
-      color: white;
-      position: absolute;
-      top: 0;
-      left: 11px;
-      font-weight: bold;
-    }
-  }
-  .description {
-    font-size: 0.8rem;
-    background: #000000c4;
-    border-left: 4px solid #e8493e;
-    color: white;
-    position: relative;
-    top: -38px;
-    left: 12px;
-    min-height: 1.3rem;
-    padding: 5px 10px;
+  .speaker-info {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-style: italic;
-    font-weight: bold;
+
+    .speaker-name {
+      font-size: 32px;
+      font-weight: bold;
+      flex-shrink: 0;
+      margin-right: 5px;
+    }
+    
+    .speaker-desc {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 1.3;
+    }
+  }
+
+  .speaker-img {
+    width: 100%;
+    height: 165px;
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(1) contrast(110%);
+  }
+
+  &:hover {
+    .speaker-img {
+      filter: none;
+    }
   }
 }
 </style>

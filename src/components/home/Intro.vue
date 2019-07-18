@@ -56,7 +56,6 @@ export default {
 }
 .schedule-section-title {
   min-width: 310px;
-  text-align: center;
 }
 .schedule {
   display: flex;

@@ -36,7 +36,7 @@ body {
 
 .contents {
   padding: 20px 15px 25px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
