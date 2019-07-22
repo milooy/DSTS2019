@@ -38,6 +38,7 @@ export default {
   align-items: center;
   /* justify-content: center; */
   background: #ffffd5;
+  padding: 10px 15px;
 
   .speaker-img {
     width: 35px;

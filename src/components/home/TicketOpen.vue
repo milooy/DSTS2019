@@ -18,7 +18,7 @@ import moment from "moment";
 export default {
   data() {
     const today = moment();
-    const dday = moment("2019-7-24");
+    const dday = moment("2019-7-26");
     const diffDays = dday.diff(today, "days");
     return {
       diffDays,
@@ -37,11 +37,11 @@ export default {
 .ticket-open-container {
   background: #f6f6f6;
   text-align: center;
-  padding: 50px 0;
+  padding: 10px 0;
   font-weight: bold;
   margin: 20px 0;
   font-family: "Teko", sans-serif;
-  font-size: 3rem;
+  font-size: $font-xxl;
   font-family: "Montserrat", sans-serif;
 
   .left-pane {
@@ -51,6 +51,7 @@ export default {
 
     .d-day {
       font-weight: 800;
+      margin-top: -30px;
     }
 
     .buy-ticket-button {

@@ -26,8 +26,14 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  line-height: 1.78;
+  font-size: $font-m;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

@@ -6,11 +6,12 @@
 export default {}
 </script>
 
-<style>
+<style scoped lang="scss">
 .section-title {
   margin: 0;
   text-decoration: underline;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  font-size: $font-xl;
 }
 </style>

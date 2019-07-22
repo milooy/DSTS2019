@@ -55,13 +55,28 @@ export default {
 
 .router-link {
   margin: 10px 14px;
-  font-size: 1.2rem;
-  color: white;
+  font-size: $font-m;
+  color: #ffffffc4;
   text-decoration: none;
 
-  &.router-link-active  {
-    text-decoration: underline;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff8a;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+
+  &.router-link-active {
     cursor: default;
+    color: white;
+
+    &:before {
+      background: #ea3b6b;
+    }
   }
 }
 

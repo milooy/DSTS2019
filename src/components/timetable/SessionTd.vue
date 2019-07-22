@@ -28,8 +28,8 @@ export default {
     handleShowDetail: function(id) {
       const sessionIdx = getSessionIdx(this.name);
       this.$emit("showDetail", null, sessionIdx);
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -38,6 +38,8 @@ export default {
   cursor: pointer;
   display: flex;
   align-items: center;
+  padding: 10px 15px;
+  transition: $background-transition;
 
   .speaker-img {
     width: 60px;
@@ -49,7 +51,7 @@ export default {
   }
 
   &:hover {
-    background: #e4ff60;
+    background: $primary;
 
     .speaker-img {
       filter: none;
@@ -60,8 +62,9 @@ export default {
 .title {
   font-weight: bold;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: $font-m;
   margin-bottom: 3px;
+  line-height: 1.3;
 }
 
 .speaker-container {

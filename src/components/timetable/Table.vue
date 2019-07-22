@@ -102,7 +102,7 @@
         </tr>
       </table>
     </div>
-    <SessionDetail :data="sessionList[currentSessionId]" :closeDetail="closeDetail"/>
+    <SessionDetail :currentSessionId="currentSessionId" :closeDetail="closeDetail"/>
   </div>
 </template>
 
@@ -110,8 +110,6 @@
 import SessionDetail from "@/components/timetable/SessionDetail.vue";
 import SessionTd from "./SessionTd.vue";
 import LightningTd from "./LightningTd.vue";
-import backgroundImage from "@/assets/background.png";
-import sessionList, { getSessionId } from "@/assets/data/timetable.js";
 
 export default {
   components: {
@@ -121,15 +119,11 @@ export default {
   },
   data() {
     return {
-      backgroundImage,
-      sessionList,
       currentSessionId: null,
-      getSessionId
     };
   },
   methods: {
     showDetail: function(_, id) {
-      console.log("쇼디테일", id);
       this.currentSessionId = id;
     },
     closeDetail: function() {
@@ -148,15 +142,11 @@ export default {
 
 .timetable th,
 .timetable td {
-  border: 1px solid #d6d6d6;
-}
-
-td {
-  padding: 10px 15px;
+  border: 1px solid $light-gray;
 }
 
 th {
-  color: #5caf55;
+  color: $primary;
   font-weight: bold;
 }
 
@@ -178,7 +168,7 @@ table tr th:last-child {
 }
 
 .break {
-  background: #cbeada;
+  background: $light-gray;
   text-align: center;
   font-style: italic;
   font-size: 14px;

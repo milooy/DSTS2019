@@ -24,17 +24,20 @@
 import YurimPlayer from "@/assets/speakers/player/yurim.png";
 import backgroundImage from "@/assets/background.png";
 import xIcon from "@/assets/images/xIcon-white.png";
-import { sessionList } from "@/assets/data/timetable.js";
+import sessionList, { getSessionIdx } from "@/assets/data/timetable.js";
 
 export default {
   props: {
-    data: {
-      type: Object,
-      default: function() {
-        return {};
-      }
-    },
+    currentSessionId: Number,
     closeDetail: Function
+  },
+  computed: {
+    data: function() {
+      if (this.currentSessionId) {
+        return sessionList[this.currentSessionId];
+      }
+      return {};
+    }
   },
   methods: {
     handleClickClose: function() {
@@ -59,6 +62,7 @@ export default {
   height: 280px;
   visibility: hidden;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px -20px 14px 9px;
 
   &.active {
     visibility: visible;
@@ -107,7 +111,7 @@ export default {
     align-items: baseline;
 
     .speaker-name {
-      font-size: 32px;
+      font-size: $font-xl;
       font-weight: bold;
       flex-shrink: 0;
     }
@@ -115,38 +119,39 @@ export default {
     .speaker-desc {
       font-weight: bold;
       color: lightgray;
-      margin: 0 3px;
+      margin: 0 10px 0 5px;
+      flex-shrink: 0;
     }
 
     .speaker-tag {
-      background: #5caf55;
+      background: $primary;
       border-radius: 6px;
       padding: 2px 7px;
-      font-size: 14px;
+      font-size: $font-s;
       margin-right: 6px;
     }
   }
 
   .title-container {
-    border-top: 2px solid #5caf55;
-    border-bottom: 2px solid #5caf55;
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
     margin: 10px 0;
+    padding: 5px 0;
 
     .title {
-      font-size: 2.2rem;
+      font-size: $font-xl;
       font-weight: bold;
-      color: #5caf55;
+      color: $primary;
+      line-height: 1.3;
     }
 
     .target {
-      strong {
-        font-size: 1.7rem;
-      }
+      line-height: 1.5em;
     }
   }
 
   .desc {
-    font-size: 12px;
+    font-size: $font-s;
   }
 }
 </style>

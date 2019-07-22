@@ -14,12 +14,12 @@ export default {
   props: {
     href: {
       type: String,
-      default: null,
+      default: null
     },
     to: {
       type: String,
-      default: null,
-    },
+      default: null
+    }
   }
 };
 </script>
@@ -31,18 +31,19 @@ export default {
   border-radius: 32px;
   background-color: #3ae9d1;
   color: white;
-  font-size: 16px;
+  font-size: $font-m;
   padding: 15px 50px;
   font-weight: bold;
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 
   a {
     text-decoration: none;
     color: white;
+    flex-shrink: 0;
   }
 }
 </style>

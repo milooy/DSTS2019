@@ -39,8 +39,6 @@ h2 {
 }
 
 .paragraph {
-  font-size: 18px;
-  line-height: 1.78;
   color: #525252;
 
   p {

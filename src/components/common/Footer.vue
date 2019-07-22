@@ -85,7 +85,7 @@ export default {
 }
 
 .footer-icon-container {
-font-size: 18px;
+font-size: $font-m;
   a {
     color: white;
     }

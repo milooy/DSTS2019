@@ -5,18 +5,6 @@
     <Sponsor grade="GOLD" width="130px" height="80px" :sponsorList="goldSponsorList"/>
     <Sponsor grade="SILVER" width="100px" height="60px" :sponsorList="silverSponsorList"/>
     <Sponsor grade="BRONZE" width="80px" height="50px" :sponsorList="bronzeSponsorList"/>
-    <!-- <div class="be-sponsor-container">
-      <img :src="UniformImage">
-      <div>
-        <h3>Become a sponsor</h3>
-        <p>DSTS는 데이터를 사랑하는 모든 사람을 위한 비영리 컨퍼런스입니다.</p>
-        <p>데이터의 중요성을 깊이 공감하는 후원사를 모십니다. 유니폼에 들어가는 회사 로고 외에 다양한 혜택을 드립니다.</p>
-        <a
-          href="https://drive.google.com/file/d/19CDylOUxz4kRQgvPPX6epeSXbAkzEFjk/view"
-          target="_blank"
-        >자세한 후원 안내</a>
-      </div>
-    </div> -->
   </div>
 </template>
 

@@ -34,7 +34,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .intro {
-  background: #5caf55;
+  background: $primary;
   min-height: 250px;
   position: relative;
   padding: 70px 30px 0;
@@ -53,12 +53,11 @@ h1 {
   color: white;
   line-height: 1.2em;
   margin: 0;
-  /* padding: 60px 0 90px; */
-  font-size: 3.5rem;
+  font-size: $font-xxl;
 }
 
 .info-container {
-  font-size: 1.2rem;
+  font-size: $font-m;
   padding-bottom: 70px;
   color: white;
 }
