@@ -212,4 +212,6 @@ const list = [
   },
 ];
 
+export const getSessionIdx = speakerName => list.find(session => session.speakerName === speakerName).id - 1;
+
 export default list;

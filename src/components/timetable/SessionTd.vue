@@ -1,31 +1,40 @@
 <template>
-  <div class="session-td">
-    <div class="speaker-img" :style="{ backgroundImage: `url(${data.speakerImage})` }"/>
-    <div class="right-pane">
-      <div class="speaker-container">
-        <div class="speaker-name">{{data.speakerName}}</div>
-        <div class="speaker-desc">{{data.speakerDesc}}</div>
+  <td v-on:click="handleShowDetail">
+    <div class="session-td-inner">
+      <div class="speaker-img" :style="{ backgroundImage: `url(${sessionData.speakerImage})` }"/>
+      <div class="right-pane">
+        <div class="speaker-container">
+          <div class="speaker-name">{{sessionData.speakerName}}</div>
+          <div class="speaker-desc">{{sessionData.speakerDesc}}</div>
+        </div>
+        <div class="title">{{sessionData.title}}</div>
       </div>
-      <div class="title">{{data.title}}</div>
     </div>
-  </div>
+  </td>
 </template>
 
 <script>
-import backgroundImage from "@/assets/background.png";
+import sessionList, { getSessionIdx } from "@/assets/data/timetable.js";
 
 export default {
-  props: ["data"],
-  data() {
-    return {
-      backgroundImage
-    };
-  }
+  props: ["name"],
+  computed: {
+    sessionData: function() {
+      const sessionIdx = getSessionIdx(this.name);
+      return sessionList[sessionIdx];
+    }
+  },
+  methods: {
+    handleShowDetail: function(id) {
+      const sessionIdx = getSessionIdx(this.name);
+      this.$emit("showDetail", null, sessionIdx);
+    },
+  },
 };
 </script>
 
 <style scoped lang="scss">
-.session-td {
+.session-td-inner {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -46,7 +55,6 @@ export default {
       filter: none;
     }
   }
-
 }
 
 .title {

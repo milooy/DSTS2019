@@ -14,26 +14,21 @@
         </tr>
         <tr>
           <td class="time">11:20 ~ 11:50 | 30분</td>
-          <td v-on:click="showDetail(0)">
-            <SessionTd :data="sessionList[0]"/>
-          </td>
-          <td v-on:click="showDetail(1)">
-            <SessionTd :data="sessionList[1]"/>
-          </td>
+          <SessionTd name="한성민" v-on:showDetail="showDetail"/>
+          <SessionTd name="최정윤" v-on:showDetail="showDetail"/>
           <td rowspan="2">Open Table #1</td>
         </tr>
         <tr>
           <td class="time">11:50 ~ 12:05 | 15분</td>
-          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
+          <LightningTd name="최정윤" v-on:showDetail="showDetail"/>
         </tr>
         <tr>
           <td class="time">12:05 ~ 13:05 | 60분</td>
           <td colspan="3" class="break" height="50">🍗점심식사</td>
         </tr>
-        
       </table>
 
-      <table class="timetable">
+      <!-- <table class="timetable">
         <tr>
           <th class="table-title">후반전</th>
           <th>세션1</th>
@@ -125,7 +120,7 @@
           <td class="time">17:15 ~ 18:00 | 45분</td>
           <td colspan="3" class="break" height="50">네트워킹</td>
         </tr>
-      </table>
+      </table> -->
 
     </div>
     <SessionDetail :data="sessionList[currentSessionId]" :closeDetail="closeDetail"/>
@@ -137,7 +132,7 @@ import SessionDetail from "@/components/timetable/SessionDetail.vue";
 import SessionTd from "./SessionTd.vue";
 import LightningTd from "./LightningTd.vue";
 import backgroundImage from "@/assets/background.png";
-import sessionList from "@/assets/data/timetable.js";
+import sessionList, { getSessionId } from "@/assets/data/timetable.js";
 
 export default {
   components: {
@@ -149,11 +144,13 @@ export default {
     return {
       backgroundImage,
       sessionList,
-      currentSessionId: null
+      currentSessionId: null,
+      getSessionId,
     };
   },
   methods: {
-    showDetail: function(id) {
+    showDetail: function(_, id) {
+      console.log("쇼디테일", id)
       this.currentSessionId = id;
     },
     closeDetail: function(id) {
