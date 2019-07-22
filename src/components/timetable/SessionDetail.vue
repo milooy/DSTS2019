@@ -33,7 +33,8 @@ export default {
   },
   computed: {
     data: function() {
-      if (this.currentSessionId) {
+      const currentSessionId = this.currentSessionId;
+      if (currentSessionId === 0 || currentSessionId) {
         return sessionList[this.currentSessionId];
       }
       return {};
