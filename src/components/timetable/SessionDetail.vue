@@ -24,7 +24,7 @@
 <script>
 import YurimPlayer from "@/assets/speakers/player/yurim.png";
 import backgroundImage from "@/assets/background.png";
-import xIcon from "@/assets/images/xIcon.png";
+import xIcon from "@/assets/images/xIcon-white.png";
 import { sessionList } from "@/assets/data/timetable.js";
 
 export default {
@@ -79,12 +79,13 @@ export default {
   }
 
   .close {
-    width: 40px;
-    height: 40px;
-    background: #e4ff60;
+    width: 27px;
+    height: 27px;
     position: relative;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: -10px;
+    float: right;
+    cursor: pointer;
   }
 }
 .description-container {

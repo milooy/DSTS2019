@@ -3,11 +3,11 @@
     <div class="speaker-list">
       <SectionTitle class="players-title">PLAYERS</SectionTitle>
       <Speaker
-        v-for="speaker in speakerList"
-        :key="speaker.name"
-        :image="speaker.image"
-        :name="speaker.name"
-        :description="speaker.description"
+        v-for="session in sessionList"
+        :key="session.speakerName"
+        :image="session.speakerImage"
+        :name="session.speakerName"
+        :description="session.speakerDesc"
       />
       <div class="go-to-schedule">
         경기 스케쥴 보러가기
@@ -21,7 +21,7 @@
 import Speaker from "@/components/common/Speaker.vue";
 import SectionTitle from "@/components/common/SectionTitle.vue";
 import Button from "@/components/common/Button.vue";
-import { speakerList } from "@/assets/data/index.js";
+import sessionList from "@/assets/data/timetable.js";
 
 export default {
   components: {
@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      speakerList,
+      sessionList,
     };
   }
 };

@@ -33,7 +33,7 @@ export const sponsors = {
     { name: 'Zepl' },
     { name: 'Zepl' },
     { name: 'Zepl' },
-  ]
+  ],
 };
 
 export const speakerList = [

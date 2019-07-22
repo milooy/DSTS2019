@@ -42,7 +42,7 @@ export default {
 
   .speaker-img {
     width: 100%;
-    height: 165px;
+    height: 180px;
     background-size: cover;
     background-position: center center;
     filter: grayscale(1) contrast(110%);

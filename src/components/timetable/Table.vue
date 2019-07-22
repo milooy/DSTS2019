@@ -137,7 +137,7 @@ import SessionDetail from "@/components/timetable/SessionDetail.vue";
 import SessionTd from "./SessionTd.vue";
 import LightningTd from "./LightningTd.vue";
 import backgroundImage from "@/assets/background.png";
-import { sessionList } from "@/assets/data/timetable.js";
+import sessionList from "@/assets/data/timetable.js";
 
 export default {
   components: {
