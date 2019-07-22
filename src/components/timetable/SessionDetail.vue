@@ -1,6 +1,5 @@
 <template>
   <div class="session-detail-container" :class="{ active: data.title }">
-    <!-- <div class="close" v-on:click="handleClickClose">X</div> -->
     <img :src="xIcon" alt="Close icon" class="close" v-on:click="handleClickClose">
     <img :src="data.playerImage" :class="{ active: data.title }">
     <div class="description-container" :class="{ active: data.title }">
@@ -57,7 +56,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 230px;
+  height: 280px;
   visibility: hidden;
   color: white;
 
@@ -92,11 +91,15 @@ export default {
   display: inline-block;
   position: absolute;
   right: 0;
+  top: 10px;
   transition: right ease 0.2s;
-  max-width: 25rem;
+  max-width: 55vw;
+  height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   &.active {
-    right: 80px;
+    right: 60px;
   }
 
   .speaker-container {
@@ -106,6 +109,7 @@ export default {
     .speaker-name {
       font-size: 32px;
       font-weight: bold;
+      flex-shrink: 0;
     }
 
     .speaker-desc {

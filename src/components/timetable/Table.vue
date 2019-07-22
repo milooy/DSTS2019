@@ -132,7 +132,7 @@ export default {
       console.log("쇼디테일", id);
       this.currentSessionId = id;
     },
-    closeDetail: function(id) {
+    closeDetail: function() {
       this.currentSessionId = null;
     }
   }
