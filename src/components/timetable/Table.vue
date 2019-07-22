@@ -14,13 +14,13 @@
         </tr>
         <tr>
           <td class="time">11:20 ~ 11:50 | 30분</td>
-          <SessionTd name="한성민" v-on:showDetail="showDetail"/>
-          <SessionTd name="최정윤" v-on:showDetail="showDetail"/>
+          <SessionTd name="김진영" v-on:showDetail="showDetail"/>
+          <SessionTd name="변성윤" v-on:showDetail="showDetail"/>
           <td rowspan="2">Open Table #1</td>
         </tr>
         <tr>
           <td class="time">11:50 ~ 12:05 | 15분</td>
-          <LightningTd name="최정윤" v-on:showDetail="showDetail"/>
+          <LightningTd name="심상훈" v-on:showDetail="showDetail"/>
         </tr>
         <tr>
           <td class="time">12:05 ~ 13:05 | 60분</td>
@@ -28,7 +28,7 @@
         </tr>
       </table>
 
-      <!-- <table class="timetable">
+      <table class="timetable">
         <tr>
           <th class="table-title">후반전</th>
           <th>세션1</th>
@@ -37,12 +37,8 @@
         </tr>
         <tr>
           <td class="time">13:05 ~ 13:35 | 30분</td>
-          <td v-on:click="showDetail(0)">
-            <SessionTd :data="sessionList[0]"/>
-          </td>
-          <td v-on:click="showDetail(1)">
-            <SessionTd :data="sessionList[1]"/>
-          </td>
+          <SessionTd name="임송이" v-on:showDetail="showDetail"/>
+          <SessionTd name="김인범" v-on:showDetail="showDetail"/>
           <td>Open Table #2</td>
         </tr>
         <tr>
@@ -51,26 +47,18 @@
         </tr>
         <tr>
           <td class="time">13:40 ~ 14:10 | 30분</td>
-          <td v-on:click="showDetail(0)">
-            <SessionTd :data="sessionList[0]"/>
-          </td>
-          <td v-on:click="showDetail(1)">
-            <SessionTd :data="sessionList[1]"/>
-          </td>
+          <SessionTd name="한성민" v-on:showDetail="showDetail"/>
+          <SessionTd name="양선영" v-on:showDetail="showDetail"/>
           <td>Open Table #3</td>
         </tr>
         <tr>
           <td class="time">14:10 ~ 14:25 | 15분</td>
-          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
-          </tr>
+          <LightningTd name="강민구" v-on:showDetail="showDetail"/>
+        </tr>
         <tr>
           <td class="time">14:25 ~ 14:55 | 30분</td>
-          <td v-on:click="showDetail(0)">
-            <SessionTd :data="sessionList[0]"/>
-          </td>
-          <td v-on:click="showDetail(1)">
-            <SessionTd :data="sessionList[1]"/>
-          </td>
+          <SessionTd name="백영민" v-on:showDetail="showDetail"/>
+          <SessionTd name="최정윤" v-on:showDetail="showDetail"/>
           <td>Open Table #4</td>
         </tr>
         <tr>
@@ -86,32 +74,24 @@
         </tr>
         <tr>
           <td class="time">15:30 ~ 16:00 | 30분</td>
-          <td v-on:click="showDetail(0)">
-            <SessionTd :data="sessionList[0]"/>
-          </td>
-          <td v-on:click="showDetail(1)">
-            <SessionTd :data="sessionList[1]"/>
-          </td>
+          <SessionTd name="송치오" v-on:showDetail="showDetail"/>
+          <SessionTd name="이지혜" v-on:showDetail="showDetail"/>
           <td>Open Table #5</td>
         </tr>
         <tr>
           <td class="time">16:00 ~ 16:15 | 15분</td>
-          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
-          </tr>
+          <LightningTd name="강원양" v-on:showDetail="showDetail"/>
+        </tr>
         <tr>
           <td class="time">16:15 ~ 16:45 | 30분</td>
-          <td v-on:click="showDetail(0)">
-            <SessionTd :data="sessionList[0]"/>
-          </td>
-          <td v-on:click="showDetail(1)">
-            <SessionTd :data="sessionList[1]"/>
-          </td>
+          <SessionTd name="정산하" v-on:showDetail="showDetail"/>
+          <SessionTd name="김정화" v-on:showDetail="showDetail"/>
           <td>Open Table #6</td>
         </tr>
         <tr>
           <td class="time">16:45 ~ 17:00 | 15분</td>
-          <td colspan="2" v-on:click="showDetail(0)"><LightningTd :data="sessionList[0]"/></td>
-          </tr>
+          <LightningTd name="배준현" v-on:showDetail="showDetail"/>
+        </tr>
         <tr>
           <td class="time">17:00 ~ 17:15 | 15분</td>
           <td colspan="3" class="break">클로징</td>
@@ -120,8 +100,7 @@
           <td class="time">17:15 ~ 18:00 | 45분</td>
           <td colspan="3" class="break" height="50">네트워킹</td>
         </tr>
-      </table> -->
-
+      </table>
     </div>
     <SessionDetail :data="sessionList[currentSessionId]" :closeDetail="closeDetail"/>
   </div>
@@ -138,19 +117,19 @@ export default {
   components: {
     SessionTd,
     SessionDetail,
-    LightningTd,
+    LightningTd
   },
   data() {
     return {
       backgroundImage,
       sessionList,
       currentSessionId: null,
-      getSessionId,
+      getSessionId
     };
   },
   methods: {
     showDetail: function(_, id) {
-      console.log("쇼디테일", id)
+      console.log("쇼디테일", id);
       this.currentSessionId = id;
     },
     closeDetail: function(id) {
@@ -203,7 +182,6 @@ table tr th:last-child {
   text-align: center;
   font-style: italic;
   font-size: 14px;
-
 }
 
 .time {
