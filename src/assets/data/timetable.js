@@ -22,6 +22,27 @@ import Player13 from '@/assets/speakers/player/임송이.png';
 import Player14 from '@/assets/speakers/player/정산하.png';
 import Player15 from '@/assets/speakers/player/최정윤.png';
 import Player16 from '@/assets/speakers/player/한성민.png';
+
+import Original1 from '@/assets/speakers/original/강민구.jpg';
+import Original2 from '@/assets/speakers/original/강원양.jpg';
+import Original3 from '@/assets/speakers/original/김인범.jpg';
+import Original4 from '@/assets/speakers/original/김정화.jpeg';
+import Original5 from '@/assets/speakers/original/김진영.jpg';
+import Original6 from '@/assets/speakers/original/배준현.jpg';
+import Original7 from '@/assets/speakers/original/백영민.png';
+import Original8 from '@/assets/speakers/original/변성윤.jpg';
+import Original9 from '@/assets/speakers/original/백영민.png';
+// import Original9 from '@/assets/speakers/original/송치오.jpg';
+import Original10 from '@/assets/speakers/original/심상훈.jpg';
+import Original11 from '@/assets/speakers/original/양선영.jpg';
+// import Original12 from '@/assets/speakers/original/이지혜.jpg';
+import Original12 from '@/assets/speakers/original/임송이.png';
+import Original13 from '@/assets/speakers/original/임송이.png';
+import Original14 from '@/assets/speakers/original/정산하.jpg';
+import Original15 from '@/assets/speakers/original/최정윤.png';
+import Original16 from '@/assets/speakers/original/한성민.png';
+
+
 // import YurimPlayer from '@/assets/speakers/player/yurim.png';
 // import BaseballPlayer from '@/assets/speakers/player/baseball.png';
 
@@ -34,7 +55,7 @@ const list = [
     target: '데이터야놀자 및 데이터 컨퍼런스를 만들어가는 사람들이 궁금하신 분들',
     tags: ['데이터행사준비', '커뮤니티', '다같이놀자', '데이터야놀자'],
     desc: `데이터 사용자들을 위한 축제 '데이터야놀자'를 4년째 준비하면서 경험하고 느꼈던 점을 공유하고자 합니다. 데이터야놀자라는 행사가 가지는 독특한 분위기와 데이터야놀자의 철학을 간단히 이야기하고, 데놀을 준비하면서 있었던 에피소드와 준비 과정을 있는 그대로 알려드리고 싶습니다. 행사 준비에 관심이 있으시거나, 커뮤니티에 관심있는 분들에게 조금이라도 도움이 될 수 있으면 좋겠어요. 제가 속해있었던 그 어떤 조직보다도 자유롭고 애자일하게 행사를 준비해가는 위풍당당 데놀 준비위가 궁금하신 분들! 같이 놀아요 ㅎㅎ`,
-    speakerImage: a,
+    speakerImage: Original1,
     playerImage: Player1,
   },
   {
@@ -45,7 +66,7 @@ const list = [
     target: '나의 관심사를 데이터로 분석해보고 싶은 비기너',
     tags: ['데이터로 보는 나', '파이썬', '경험', '시각화'],
     desc: `지난 5-6월 파이썬을 처음 접한 뒤 진행한 '나의 브런치 구독자 데이터 분석'을 프로젝트의 과정과 후기를 공유합니다. 프로젝트 상 파이썬을 활용한 웹 크롤링, 시각화(tableau 일부 활용)를 해보았고, 간단한 인사이트를 얻었습니다. 라이트닝 토크를 통해서 제 경험을 전하며, 누구나 파이썬 등 데이터 활용 기술을 활용해 자신의 관심사와 궁금증에 대한 답을 찾을 수 있으며,  나아가 업무 등에  데이터 활용 경험을 시도하고 적용할 수 있다는 이야기를 많은 분들에게 공유하고자 합니다.`,
-    speakerImage: a,
+    speakerImage: Original2,
     playerImage: Player2,
   },
   {
@@ -56,7 +77,7 @@ const list = [
     target: 'Sports와 Data와 관심있는 분들',
     tags: ['sports', 'data', 'TeamPlay'],
     desc: `메이저리그에서 시작된 MoneyBall 열풍을 비롯하여, Sports 경기에서 발생한 다양한 데이터는 이제 팀 별 전술에 적용되는 중요한 지표가 되고 있습니다. 우리가 일반적으로 중요하다고 생각했던 데이터가 아닌, 새로운 지표를 토대로 선수에 대한 팀에 대한 재평가가 이루어지고 있으며, 이를 토대로 새로운 전술과 전략이 만들어지고 있습니다. 스포츠에서 발생하는 기록 데이터가 어떤 변화를 만들어냈고, 우리는 이제 어떤 관점에서 스포츠를 즐길 수 있을지 살펴보고자 합니다.`,
-    speakerImage: a,
+    speakerImage: Original3,
     playerImage: Player3,
   },
   {
@@ -70,7 +91,7 @@ const list = [
     프로젝트 매니저에게 데이터로 커뮤니케이션할 수 있는 능력은 필수입니다.
     마켓 컬리의 검색 시스템 PM으로 어떻게 KPI로 회사와 커뮤니케이션 해오고 있는지 공유합니다.
     프로젝트의 비즈니스 임팩트는 무엇이며, 이 프로젝트는 얼마나 중요한지 데이터로 회사를 설득한 이야기, 프로젝트의 성과를 측정할 수 있는 KPI 기획과 합의 그리고, 트래킹 방법에 대해 발표합니다.`,
-    speakerImage: a,
+    speakerImage: Original4,
     playerImage: Player4,
   },
   {
@@ -82,7 +103,7 @@ const list = [
     tags: ['데이터', '데이터시각화'],
     desc: `"모두들 데이터 시대라고 합니다. 매일 데이터 관련 신기술들이 쏟아지고, 4차 산업혁명이라는 시대적 흐름에 힘입어 수 많은 데이터 관련 서적들이 서점의 베스트셀러 섹션을 매우고 있습니다. 여기서 잠깐, 과연 우리는 “데이터”에 대해 얼마나 알고 있을까요? “데이터”가 과연 얼마나 중요하길래 다들 “데이터데이터”하는 걸까요? 
     저희 발표에서는 “데이터”가 언제부터 어떻게 한국에서 이른바 뜨기 시작했는지, 데이터가 혹시 책을 팔기위한 마케팅 수단으로 사용되고 “데이터”라는 자극적 소재에 대중이 속아 넘어가고 있는 것은 아닌지를 한국에서 나오고 있는 데이터 관련 서적의 출판 현황과 관련 데이터를 분석, 다양한 방식으로 시각화 한 내용을 공유하려고 합니다. 또한 이러한 책을 쓰고 있는 작가들과 추천글, 혹은 서평글을 쓴 사람들의 인맥도를 통해 한국 데이터 분야가 과연 그들만의 리그인지도 확인해보려고 합니다"`,
-    speakerImage: a,
+    speakerImage: Original5,
     playerImage: Player5,
   },
   {
@@ -93,7 +114,7 @@ const list = [
     target: '크롤링후 머신러닝 결과가 좋지않아 팀원들 끼리 싸우실분',
     tags: ['데이터전처리', '크롤링'],
     desc: `3줄 요약 봇의 머신러닝 결과가 좋지 않은걸 ? 싱글쿼테이션이 영 좋지 않은 곳을 관통 한것 같아, 당해본 사람만이 쓰라린 Universal Coded Character Set의 업캐스팅과 다운캐스팅 ! 크롤링을 하고나니 ', ＇점 같은 것들이 우리를 괴롭힌다`,
-    speakerImage: a,
+    speakerImage: Original6,
     playerImage: Player6,
   },
   {
@@ -104,7 +125,7 @@ const list = [
     target: '자연어 처리(NLP) 및 Deeplearning을 이용한 대화 시스템에 관심이 있는 사람, 일상 대화 및 데이터에 관심있는 사람, 제품 출시를 위해 다른 직무와 협업을 해야 하는 엔지니어',
     tags: ['NLP', '일상대화', '기획', '개발', '머신러닝', '협업'],
     desc: `저희 스캐터랩은 100억건의 카카오톡 데이터를 이용하여 사람들에게 친근하게 다가갈 수 있는 일상 대화 시스템을 만들고 있습니다. 학습 데이터의 구축부터 결과물의 평가까지 여러 팀(개발, 기획, ML)이 함께 노력하고 있습니다. ML은 데이터 기반의 접근법이다 보니 여러 관점(기획자 및 엔지니어의 관점)에서 데이터에 대한 세밀한 분석이 필요합니다. 그리고 이를 실제 제품에 적용되기 위해서는 개발팀과의 소통도 활발히 이루어져야 합니다. 최근에 진행한 Multi-turn context를 반영한 대화 시스템을 만들기 위해 각 팀이 어떻게 협업했는지를 중심으로 발표를 진행하고자 합니다.`,
-    speakerImage: a,
+    speakerImage: Original7,
     playerImage: Player7,
   },
   {
@@ -118,7 +139,7 @@ const list = [
 
     우리는 누구나 시니어가 됩니다. 시니어가 되는 과정에서 고민할 내용과 동시에 3년차에 팀장이 되며 겪은 고민 & 갈등을 발표하고 어떻게 극복했는지 말씀드리려고 합니다.
     쏘카의 타다 데이터팀 빌딩 과정에 대해서 자세히 알 수 있을거에요 :)"`,
-    speakerImage: a,
+    speakerImage: Original8,
     playerImage: Player8,
   },
   {
@@ -139,7 +160,7 @@ const list = [
     - 팀원 A : 치오님, 각각 Feature 형태가 어케되나용? True/False, Catergory, 정수형 등등
     
     - 치오 : Feature의 형태 및 구성을 정리한 Zeppelin Notebook 공유드립니다!"`,
-    speakerImage: a,
+    speakerImage: Original9,
     playerImage: Player9,
   },
   {
@@ -150,7 +171,7 @@ const list = [
     target: '1.아직 명확한 데이터 파이프라인이 구축되지 않은 회사에서 일하는 실무자 2.No-SQL에 입문을 앞둔 데이터 분석가 3.스타트업에서의 데이터 분석 실무 모습을 알고 싶은 학습자 4.서버팀과의 소통에 어려움을 겪는 비개발자 5.제 발표를 듣고 충고 및 좋은 방향을 제시해주실 수 있는 고수님',
     tags: ['DB', 'MongoDB', 'log_data', 'communication', 'butterfly_effect'],
     desc: `데이터 분석가로서 저는 서비스와 관련된 108개의 Metric을 정리하는 것으로 업무를 시작합니다. 이는 회사에서 사용하는 여러 DB에 Python으로 만든 프로그램을 연동하여 작업합니다. 최근 서버팀에서 user login log data를 MySQL에서 MongoDB로 옮겼는데, 해당 작업이 관련자들에게 제대로 공유되지 않고 진행되었습니다. user login log data는 DAU와 Session을 집계하는 가장 기본적은 log data로서 이 변화는 다른 다양한 Metric에 영향을 미쳤습니다. 이로 인해 데이터 프로그램을 수정하는 동안 데이터를 제대로 정리/분석하지 못하게 되었고, 해당 시점에서 내려야 하는 판단을 바르게 내리지 못하여 결과적으로는 회사의 손실로 이어졌습니다. 데이터를 저장, 분석, 활용하는 모든 과정이 하나의 팀 플레이라는 관점에서 제대로 공유되지 않은 하나의 ‘작은 작업’도 결과적으로는 사업적인 관점에서 ‘큰 영향’을 줄 수 있다는 내용을 나누고 싶습니다. 덧붙여 해당 경험을 바탕으로 개발자가 Operating DB에서 하는 작업에 영향을 받지 않고 데이터 파트에서 안정적으로 작업을 할 수 있도록 데이터 웨어하우스(Data Warehouse) 구축의 중요성도 함께 공유하고자 합니다. `,
-    speakerImage: a,
+    speakerImage: Original10,
     playerImage: Player10,
   },
   {
@@ -161,7 +182,7 @@ const list = [
     target: '프로그래밍을 잘 모르지만 데이터 시각화에 관심있는 사람들',
     tags: ['데이터시각화', '툴사용', '스프레드시트', '정보공유'],
     desc: `프로그래밍 언어를 몰라도 스프레드시트만으로 데이터를 시각화하고, 구글 사이트에 페이지를 만들어 데이터로 도출된 결과물을 쉽게 공유하는 방법을 알려드리겠습니다. 영화진흥위원회에서 제공하는 일별 박스오피스 데이터를 스프레드시트로 분석, 시각화하는 예시를 보여드리겠습니다.`,
-    speakerImage: a,
+    speakerImage: Original11,
     playerImage: Player11,
   },
   {
@@ -172,7 +193,7 @@ const list = [
     target: '20~30대 해외취업을 고려하는, 외국어로 업무를 하고싶은 데이터 분석가',
     tags: ['해외기업_데이터분석', '협업', '커뮤니케이션'],
     desc: `언어, 커뮤니케이션의 장벽이 있는 상황에서 데이터 분석가는 어떤 식으로 상황을 이끌어야 할까? 영어, 일본어로 데이터 분석 업무를 경험한 사람의 경험사례를 위주로 진행되는 발표. 해외에서 근무하고 싶은 사람이라면 한번 쯤 들어볼만한 이야기.`,
-    speakerImage: a,
+    speakerImage: Original12,
     playerImage: Player12,
   },
   {
@@ -185,7 +206,7 @@ const list = [
     desc: `"일뿐만 아니라 결혼을 할 때도 팀워크가 필요합니다. 새로운 시작을 앞두고 함께 많은 것을 결정하고 일을 분담해야 하기 때문입니다. 특히 청첩장, 식전 영상 등은 커플만의 의미를 담기 위해 많은 사람들이 고민합니다. 저는 만남부터 결혼까지 연애의 역사를 데이터로 분석해 웨딩에 활용했습니다. 
 
     편지에 쓰여진 텍스트를 분석해 만든 청첩장, 데이트 통장 카드 이력 분석, 같이 찍은 사진에 담긴 위치데이터 시각화까지. 연애의 일상을 데이터로 분석, 시각화해 웨딩에 활용했습니다. 이번 발표에서는 연애의 일상을 데이터로 어떻게 분석할 수 있는지, 각자 역할을 나눠 어떻게 데이터를 분석하고 시각화했는지, 분석한 내용을 어떻게 활용했는지 등을 발표하려고 합니다. "`,
-    speakerImage: a,
+    speakerImage: Original13,
     playerImage: Player13,
   },
   {
@@ -196,7 +217,7 @@ const list = [
     target: '현대 과학에 조금이라도 관심이 있는 사람, 시장에서 흔히 보는 종류가 아닌 색다른 빅데이터에 대해서 알고 싶은 사람',
     tags: ['물리', '과학', '대형협력', '협업', '빅데이터'],
     desc: `사람들은 물리학에 대해 여러가지 선입견을 갖고 있지만, 사실 대부분이 현대물리학계가 무슨 일을, 어떻게 하는지 잘 모르는 것이 현실이다. 현대물리학의 수많은 분야는 수십 수백, 심지어는 수천명의 대형 협력으로 이루어지며, 가히 빅데이터라고 불리울만한 양의 데이터를 분석하는 일로 이루어진다. 이번 발표에서는 대형 입자물리학 및 천문학 프로젝트들을 중심으로, 현대물리학이 어떻게 데이터 중심적으로 돌아가고 있는지, 어떤 빅데이터를 어떻게 다루고 있는지, 그리고 왜 수천명에 다르는 팀워크가 필요한 일인지 간단히 소개하고자 한다.`,
-    speakerImage: a,
+    speakerImage: Original14,
     playerImage: Player14,
   },
   {
@@ -207,7 +228,7 @@ const list = [
     target: '데이터 팀 또는 Growth 팀 빌딩을 고민하는 사람. 비개발자/개발자 사이의 협업을 기대하는 사람 ',
     tags: ['협업', '그로스', '데이터분석', '팀빌딩'],
     desc: `서비스가 성장하고 사용하는 유저들이 많아질수록 데이터를 분석해야 하는 필요성이 커졌습니다. 하지만 현재 당근마켓은 데이터 분석가, 엔지니어가 없습니다. 데이터 분석은 필요한데, 팀에 데이터를 전문적으로 다루는 사람은 없는 상황.  저는 머신러닝 엔지니어를 비롯해 서버 개발자, 클라 개발자 들을 설득하며 Growth TF를 꾸렸습니다. 저희 Growth TF 팀 빌딩의 여정, 데이터로 일하는 방식에 대해 소개하고 싶습니다.`,
-    speakerImage: a,
+    speakerImage: Original15,
     playerImage: Player15,
   },
   {
@@ -226,7 +247,7 @@ const list = [
     
     자 그럼 광대한 하둡의 바다를 누빌 준비가 되셨나요? 🌊
     잘 따라오세요! 잘못하면 하둡의 강력한 파도에 자칫 휩쓸려갈지 몰라요!"`,
-    speakerImage: a,
+    speakerImage: Original16,
     playerImage: Player16,
   },
 ];
