@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { sponsors } from "@/assets/data/index.js";
+import sponsors from "@/assets/data/sponsors.js";
 import MarqueeSponsor from "@/components/common/MarqueeSponsor.vue";
 
 export default {

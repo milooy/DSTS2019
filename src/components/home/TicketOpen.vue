@@ -4,7 +4,7 @@
       <div class="left-pane">
         TICKET OPEN
         <div class="d-day">D-{{diffDays}}</div>
-        <a href="/" class="buy-ticket-button">BUY NOW</a>
+        <a href="https://festa.io/events/395" target="_blank" class="buy-ticket-button">BUY NOW</a>
       </div>
       <img :src="TicketImg" alt="Ticket image">
     </div>

@@ -10,7 +10,7 @@
       <router-link to="/timetable" class="router-link">Timetable</router-link>
     </div>
     <div>
-      <a href="/" class="register-button">REGISTER</a>
+      <a href="https://festa.io/events/395" class="register-button" target="_blank">REGISTER</a>
     </div>
   </div>
 </template>

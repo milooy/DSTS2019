@@ -1,10 +1,11 @@
 <template>
   <div class="sponsor-container">
     <SectionTitle class="players-title">SPONSORS</SectionTitle>
-    <Sponsor grade="PLATINUM" width="160px" height="100px" :sponsorList="platinumSponsorList"/>
-    <Sponsor grade="GOLD" width="130px" height="80px" :sponsorList="goldSponsorList"/>
-    <Sponsor grade="SILVER" width="100px" height="60px" :sponsorList="silverSponsorList"/>
-    <Sponsor grade="BRONZE" width="80px" height="50px" :sponsorList="bronzeSponsorList"/>
+    <Sponsor grade="PLATINUM" width="210px" height="120px" :sponsorList="platinumSponsorList"/>
+    <!-- <Sponsor grade="VENUE" width="160px" height="100px" :sponsorList="venueSponsorList"/> -->
+    <Sponsor grade="GOLD" width="180px" height="100px" :sponsorList="goldSponsorList"/>
+    <Sponsor grade="BRONZE" width="140px" height="90px" :sponsorList="bronzeSponsorList"/>
+    <Sponsor grade="MEDIA" width="140px" height="90px" :sponsorList="mediaSponsorList"/>
   </div>
 </template>
 
@@ -12,7 +13,7 @@
 import Sponsor from "@/components/common/Sponsor.vue";
 import SectionTitle from "@/components/common/SectionTitle.vue";
 
-import { sponsors } from "@/assets/data/index.js";
+import sponsors from "@/assets/data/sponsors.js";
 import UniformImage from "@/assets/sponsors/uniform.png";
 
 export default {

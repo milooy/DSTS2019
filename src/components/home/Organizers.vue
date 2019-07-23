@@ -1,18 +1,18 @@
 <template>
   <div class="powered-by-container">
-    <SectionTitle>POWERED BY</SectionTitle>
+    <SectionTitle>ORGANIZED BY</SectionTitle>
     <div class="logo-container">
-      <img class="zepl-logo" :src="ZeplLogo">
+      <img class="lbd-logo" :src="LBDLogo">
       <img class="x-icon" :src="xIcon">
-      <img class="dataitgirls-logo" :src="DataItGirlsLogo">
+      <img class="dataittalks-logo" :src="DataItTalksLogo">
     </div>
   </div>
 </template>
 
 <script>
 import SectionTitle from "@/components/common/SectionTitle.vue";
-import ZeplLogo from "@/assets/logos/zepl-logo.png";
-import DataItGirlsLogo from "@/assets/logos/DataItGirls_CI.png";
+import LBDLogo from "@/assets/logos/lbd-logo_1.png";
+import DataItTalksLogo from "@/assets/logos/DataItTalks.png";
 import xIcon from "@/assets/images/xIcon.png";
 
 export default {
@@ -21,8 +21,8 @@ export default {
   },
   data() {
     return {
-      ZeplLogo,
-      DataItGirlsLogo,
+      LBDLogo,
+      DataItTalksLogo,
       xIcon
     };
   }
@@ -41,7 +41,7 @@ export default {
     margin: 30px 0 50px;
   }
 
-  .zepl-logo {
+  .lbd-logo {
     height: 90px;
     margin-left: 45px;
   }
@@ -49,7 +49,7 @@ export default {
     height: 30px;
     margin: 0 20px;
   }
-  .dataitgirls-logo {
+  .dataittalks-logo {
     height: 90px;
   }
 }
