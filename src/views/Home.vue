@@ -8,8 +8,12 @@
       </h1>
     </Header>
     <Section>
+      <div class="object-1"/>
       <Intro/>
     </Section>
+    <img :src="Object2Img" alt="Background object" class="object-2">
+    <img :src="Object3Img" alt="Background object" class="object-3">
+    <img :src="Object4Img" alt="Background object" class="object-4">
     <TicketOpen/>
     <Section>
       <Speakers/>
@@ -36,6 +40,10 @@ import Organizers from "@/components/home/Organizers.vue";
 import BecomeSponsor from "@/components/home/BecomeSponsor.vue";
 import Header from "@/components/common/Header.vue";
 
+import Object2Img from "@/assets/images/object-2.png";
+import Object3Img from "@/assets/images/object-3.png";
+import Object4Img from "@/assets/images/object-4.png";
+
 export default {
   name: "home",
   components: {
@@ -49,7 +57,11 @@ export default {
     Header
   },
   data() {
-    return {};
+    return {
+      Object2Img,
+      Object3Img,
+      Object4Img
+    };
   }
 };
 </script>
@@ -59,5 +71,38 @@ export default {
   h1 {
     padding: 60px 0 90px;
   }
+}
+
+.object-1 {
+  background: #f4f4f4;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  z-index: -2;
+  top: 510px;
+  left: 140px;
+}
+.object-2 {
+  position: absolute;
+  right: 0;
+  height: 400px;
+  z-index: -2;
+  bottom: -167px;
+}
+.object-3 {
+  position: absolute;
+  left: 0;
+  height: 290px;
+  z-index: -2;
+  bottom: -327px;
+}
+.object-4 {
+  position: absolute;
+  left: 0;
+  width: 430px;
+  z-index: -2;
+  bottom: -1367px;
 }
 </style>
