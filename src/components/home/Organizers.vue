@@ -12,7 +12,7 @@
 <script>
 import SectionTitle from "@/components/common/SectionTitle.vue";
 import LBDLogo from "@/assets/logos/lbd-logo_1.png";
-import DataItTalksLogo from "@/assets/logos/DataItTalks.png";
+import DataItTalksLogo from "@/assets/logos/DataItTalksLogo.png";
 import xIcon from "@/assets/images/xIcon.png";
 
 export default {
