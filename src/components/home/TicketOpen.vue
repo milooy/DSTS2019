@@ -56,7 +56,7 @@ export default {
 
     .buy-ticket-button {
       width: 196px;
-      height: 48px;
+      height: 47px;
       border-radius: 32px;
       background-color: #3ae9d1;
       color: white;
