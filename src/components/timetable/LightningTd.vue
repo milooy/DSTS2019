@@ -1,5 +1,5 @@
 <template>
-  <td colspan="2" v-on:click="handleShowDetail">
+  <td colspan="3" v-on:click="handleShowDetail">
     <div class="lightning-td-inner">
       <div class="speaker-img" :style="{ backgroundImage: `url(${sessionData.speakerImage})` }"/>
       <div class="right-pane">
@@ -37,7 +37,6 @@ export default {
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  background: #ffffd5;
   padding: 10px 15px;
 
   .speaker-img {
@@ -65,7 +64,6 @@ export default {
 }
 
 .title {
-  font-weight: bold;
   margin-bottom: 3px;
 }
 .speaker-name {

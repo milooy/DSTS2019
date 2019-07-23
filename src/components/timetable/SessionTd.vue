@@ -37,13 +37,14 @@ export default {
 .session-td-inner {
   cursor: pointer;
   display: flex;
-  align-items: center;
   padding: 10px 15px;
   transition: $background-transition;
 
   .speaker-img {
-    width: 60px;
+    width: 50px;
     height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
     background-size: cover;
     background-position: center center;
     margin-right: 7px;
@@ -52,6 +53,8 @@ export default {
 
   &:hover {
     background: $primary;
+    /* text-decoration: underline; */
+    /* box-shadow: rgba(0, 0, 0, 0.02) -1px 3px 9px 8px; */
 
     .speaker-img {
       filter: none;
@@ -75,6 +78,7 @@ export default {
     font-weight: bold;
     font-size: 0.9rem;
     margin-right: 3px;
+    flex-shrink: 0;
   }
   .speaker-desc {
     color: darkgrey;

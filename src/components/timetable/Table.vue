@@ -16,7 +16,7 @@
           <td class="time">11:20 ~ 11:50 | 30분</td>
           <SessionTd name="김진영" v-on:showDetail="showDetail"/>
           <SessionTd name="변성윤" v-on:showDetail="showDetail"/>
-          <td rowspan="2">Open Table #1</td>
+          <td rowspan="1" class="open-table">Open Table #1</td>
         </tr>
         <tr>
           <td class="time">11:50 ~ 12:05 | 15분</td>
@@ -24,7 +24,7 @@
         </tr>
         <tr>
           <td class="time">12:05 ~ 13:05 | 60분</td>
-          <td colspan="3" class="break" height="50">🍗점심식사</td>
+          <td colspan="3" class="break lunch" height="50">🍗점심식사</td>
         </tr>
       </table>
 
@@ -39,7 +39,7 @@
           <td class="time">13:05 ~ 13:35 | 30분</td>
           <SessionTd name="임송이" v-on:showDetail="showDetail"/>
           <SessionTd name="김인범" v-on:showDetail="showDetail"/>
-          <td>Open Table #2</td>
+          <td class="open-table">Open Table #2</td>
         </tr>
         <tr>
           <td class="time">13:35 ~ 13:40 | 5분</td>
@@ -49,7 +49,7 @@
           <td class="time">13:40 ~ 14:10 | 30분</td>
           <SessionTd name="한성민" v-on:showDetail="showDetail"/>
           <SessionTd name="양선영" v-on:showDetail="showDetail"/>
-          <td>Open Table #3</td>
+          <td class="open-table">Open Table #3</td>
         </tr>
         <tr>
           <td class="time">14:10 ~ 14:25 | 15분</td>
@@ -59,7 +59,7 @@
           <td class="time">14:25 ~ 14:55 | 30분</td>
           <SessionTd name="백영민" v-on:showDetail="showDetail"/>
           <SessionTd name="최정윤" v-on:showDetail="showDetail"/>
-          <td>Open Table #4</td>
+          <td class="open-table">Open Table #4</td>
         </tr>
         <tr>
           <td class="time">14:55 ~ 15:00 | 5분</td>
@@ -68,7 +68,7 @@
         <tr>
           <td class="time">15:00~15:30 | 30분</td>
           <td colspan="3" class="sponsor-time">
-            간식 타임
+            🍡간식 타임
             <br>(Ignite Talk by Sponsors)
           </td>
         </tr>
@@ -76,7 +76,7 @@
           <td class="time">15:30 ~ 16:00 | 30분</td>
           <SessionTd name="송치오" v-on:showDetail="showDetail"/>
           <SessionTd name="이지혜" v-on:showDetail="showDetail"/>
-          <td>Open Table #5</td>
+          <td class="open-table">Open Table #5</td>
         </tr>
         <tr>
           <td class="time">16:00 ~ 16:15 | 15분</td>
@@ -86,7 +86,7 @@
           <td class="time">16:15 ~ 16:45 | 30분</td>
           <SessionTd name="정산하" v-on:showDetail="showDetail"/>
           <SessionTd name="김정화" v-on:showDetail="showDetail"/>
-          <td>Open Table #6</td>
+          <td class="open-table">Open Table #6</td>
         </tr>
         <tr>
           <td class="time">16:45 ~ 17:00 | 15분</td>
@@ -119,7 +119,7 @@ export default {
   },
   data() {
     return {
-      currentSessionId: null,
+      currentSessionId: null
     };
   },
   methods: {
@@ -146,8 +146,9 @@ export default {
 }
 
 th {
-  color: $primary;
+  color: $medium-gray;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 table tr:first-child th {
@@ -164,13 +165,13 @@ table tr th:last-child {
 }
 
 .table-title {
-  font-size: 2rem;
+  color: $primary;
+  font-size: $font-m;
 }
 
 .break {
   background: $light-gray;
   text-align: center;
-  font-style: italic;
   font-size: 14px;
 }
 
@@ -181,7 +182,25 @@ table tr th:last-child {
 }
 
 .sponsor-time {
-  background: #ffd589;
+  background: $secondary;
   text-align: center;
+  height: 100px;
+  font-size: $font-ms;
+  font-weight: bold;
+  color: white;
+}
+
+.open-table {
+  font-size: 0.9rem;
+  padding: 10px 15px;
+}
+
+.lunch {
+  height: 150px;
+  background: $secondary;
+  text-align: center;
+  font-size: $font-ms;
+  font-weight: bold;
+  color: white;
 }
 </style>

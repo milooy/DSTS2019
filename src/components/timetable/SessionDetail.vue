@@ -60,7 +60,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 280px;
+  height: 320px;
   visibility: hidden;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.04) 0px -20px 14px 9px;
@@ -72,7 +72,7 @@ export default {
   img {
     position: fixed;
     bottom: 0;
-    height: 400px;
+    height: 420px;
     left: -80px;
     transition: all ease 0.3s;
     transition-delay: 0.1s;
