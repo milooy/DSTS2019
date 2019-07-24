@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "4492a223337112670372012df7fdc012",
-    "url": "/DSTS2019/img/송치오.4492a223.png"
+    "revision": "70f1728c0a805f80ec3c2d058505bc48",
+    "url": "/DSTS2019/img/uniform.70f1728c.png"
   },
   {
     "revision": "29bc94a32bc39eda6d8f566a34bd5183",
@@ -12,12 +12,20 @@ self.__precacheManifest = [
     "url": "/DSTS2019/robots.txt"
   },
   {
-    "revision": "ad4b57b8676a1fd9901d",
-    "url": "/DSTS2019/js/app.37a8648c.js"
+    "revision": "899ed9fa85b25ea019fe",
+    "url": "/DSTS2019/js/chunk-common.17e0a146.js"
   },
   {
     "revision": "a6015316ef24e9df8112",
     "url": "/DSTS2019/js/chunk-vendors.7892bc12.js"
+  },
+  {
+    "revision": "138dc670731d7d5ba2df",
+    "url": "/DSTS2019/js/index.83de9b86.js"
+  },
+  {
+    "revision": "70ee23516bedb91fe688",
+    "url": "/DSTS2019/js/timetable.35871d4f.js"
   },
   {
     "revision": "fe876cd53d327fb20f9dc21fd1f93470",
@@ -64,8 +72,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/이지혜.e070bb84.jpeg"
   },
   {
-    "revision": "f9555477677f0d4f699c60c96cb361d5",
-    "url": "/DSTS2019/index.html"
+    "revision": "b14e5a1a1ab564fa7063bb078edd9842",
+    "url": "/DSTS2019/timetable.html"
   },
   {
     "revision": "02a1a39c19c39e4f88600c6bd236bf2f",
@@ -92,16 +100,16 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/배준현.459334bb.png"
   },
   {
-    "revision": "70f1728c0a805f80ec3c2d058505bc48",
-    "url": "/DSTS2019/img/uniform.70f1728c.png"
-  },
-  {
     "revision": "cc1a765d2a555a4e6074",
     "url": "/DSTS2019/js/about.b3a732dd.js"
   },
   {
-    "revision": "8bb9047b3d2a241d034170bc3b1946e8",
-    "url": "/DSTS2019/img/ticket.8bb9047b.png"
+    "revision": "4492a223337112670372012df7fdc012",
+    "url": "/DSTS2019/img/송치오.4492a223.png"
+  },
+  {
+    "revision": "5bbf8f806b8fc6d46086d5c7d228c555",
+    "url": "/DSTS2019/index.html"
   },
   {
     "revision": "0bed7d3cb1fe63081ee2f8dd939fbc1b",
@@ -116,8 +124,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/최정윤.e4eec0ba.png"
   },
   {
-    "revision": "f7fea9ff3a187a29a4b774b9209c4c9c",
-    "url": "/DSTS2019/img/김정화.f7fea9ff.png"
+    "revision": "8bb9047b3d2a241d034170bc3b1946e8",
+    "url": "/DSTS2019/img/ticket.8bb9047b.png"
   },
   {
     "revision": "1be58c916ea902f5ed89685e482f55a4",
@@ -172,6 +180,10 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/강원양.53368fa3.jpg"
   },
   {
+    "revision": "f7fea9ff3a187a29a4b774b9209c4c9c",
+    "url": "/DSTS2019/img/김정화.f7fea9ff.png"
+  },
+  {
     "revision": "7c0096e285c4aeabd02b408e448d81c1",
     "url": "/DSTS2019/img/main-image.7c0096e2.png"
   },
@@ -184,8 +196,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/dsts-emblem.47cd9496.png"
   },
   {
-    "revision": "ad4b57b8676a1fd9901d",
-    "url": "/DSTS2019/css/app.9c623308.css"
+    "revision": "899ed9fa85b25ea019fe",
+    "url": "/DSTS2019/css/chunk-common.27920ee9.css"
   },
   {
     "revision": "cc1a765d2a555a4e6074",
