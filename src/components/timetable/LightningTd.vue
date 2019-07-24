@@ -26,8 +26,8 @@ export default {
     handleShowDetail: function(id) {
       const sessionIdx = getSessionIdx(this.name);
       this.$emit("showDetail", null, sessionIdx);
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -36,12 +36,14 @@ export default {
   cursor: pointer;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   /* justify-content: center; */
   padding: 10px 15px;
 
   .speaker-img {
     width: 35px;
     height: 35px;
+    flex-shrink: 0;
     background-size: cover;
     background-position: center center;
     margin-right: 7px;
@@ -69,6 +71,7 @@ export default {
 .speaker-name {
   font-weight: bold;
   margin-right: 3px;
+  flex-shrink: 0;
 }
 .speaker-desc {
   color: darkgrey;

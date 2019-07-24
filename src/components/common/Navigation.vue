@@ -34,6 +34,7 @@ export default {
 <style scoped lang="scss">
 #nav {
   display: flex;
+  flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   justify-content: space-between;

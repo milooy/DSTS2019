@@ -1,13 +1,26 @@
 <template>
   <td v-on:click="handleShowDetail">
     <div class="session-td-inner">
-      <div class="speaker-img" :style="{ backgroundImage: `url(${sessionData.speakerImage})` }"/>
-      <div class="right-pane">
-        <div class="speaker-container">
-          <div class="speaker-name">{{sessionData.speakerName}}</div>
-          <div class="speaker-desc">{{sessionData.speakerDesc}}</div>
+      <div class="td-sm">
+        <div class="upper-pane">
+          <div class="speaker-img" :style="{ backgroundImage: `url(${sessionData.speakerImage})` }"/>
+          <div class="speaker-container">
+            <div class="speaker-name">{{sessionData.speakerName}}</div>
+            <div class="speaker-desc">{{sessionData.speakerDesc}}</div>
+          </div>
         </div>
         <div class="title">{{sessionData.title}}</div>
+      </div>
+      <div class="td-l">
+        <div class="speaker-img" :style="{ backgroundImage: `url(${sessionData.speakerImage})` }"/>
+        <div class="right-pane">
+          <div class="speaker-container">
+            <div class="speaker-name">{{sessionData.speakerName}}</div>
+            <div class="speaker-desc">{{sessionData.speakerDesc}}</div>
+          </div>
+          <div class="title">{{sessionData.title}}</div>
+        </div>
+
       </div>
     </div>
   </td>
@@ -35,7 +48,9 @@ export default {
 
 <style scoped lang="scss">
 td {
-  width: 40%;
+  width: 35%;
+  vertical-align: super;
+  transition: $background-transition;
 
   &:hover {
     background: $primary-light;
@@ -45,24 +60,6 @@ td {
     .speaker-img {
       filter: none;
     }
-  }
-}
-
-.session-td-inner {
-  cursor: pointer;
-  display: flex;
-  padding: 10px 15px;
-  transition: $background-transition;
-
-  .speaker-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background-size: cover;
-    background-position: center center;
-    margin-right: 7px;
-    filter: grayscale(1);
   }
 }
 
@@ -89,4 +86,59 @@ td {
     font-size: 0.8rem;
   }
 }
+
+.speaker-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center center;
+  margin-right: 7px;
+  filter: grayscale(1);
+}
+
+.session-td-inner {
+  cursor: pointer;
+  padding: 10px 15px;
+  
+  /* background: white;
+  margin: 10px 15px;
+  padding: 5px; */
+
+  /* media query */
+  .td-sm {
+    display: none;
+  }
+  .td-l {
+    display: flex;
+  }
+
+  
+
+  
+
+  /* media query */
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    .td-sm {
+      display: block;
+      .upper-pane {
+        display: flex;
+      }
+      .speaker-container {
+        flex-wrap: wrap;
+      }
+      .speaker-img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .td-l {
+      display: none;
+    }
+  }
+}
+
+
 </style>

@@ -135,7 +135,7 @@ export default {
 
 <style scoped lang="scss">
 .timetable {
-  width: 100%;
+  /* width: 100%; */
   border-collapse: collapse;
   margin-bottom: 100px;
 }
@@ -170,37 +170,38 @@ table tr th:last-child {
 }
 
 .break {
-  background: $light-gray;
   text-align: center;
   font-size: 14px;
 }
 
 .time {
   color: #878787;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
 .sponsor-time {
-  background: $secondary;
+  /* background: $secondary; */
   text-align: center;
   height: 100px;
   font-size: $font-ms;
   font-weight: bold;
-  color: white;
+  /* color: white; */
 }
 
 .open-table {
   font-size: 0.9rem;
   padding: 10px 15px;
+  width: 13%;
+  /* vertical-align: top; */
 }
 
 .lunch {
   height: 150px;
-  background: $secondary;
+  /* background: $secondary; */
   text-align: center;
   font-size: $font-ms;
   font-weight: bold;
-  color: white;
+  /* color: white; */
 }
 </style>

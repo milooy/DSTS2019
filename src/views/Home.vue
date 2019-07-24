@@ -1,6 +1,12 @@
 <template>
   <div class="home">
     <!-- <LandingIntro /> -->
+    <div class="objects">
+      <div class="object-1"/>
+      <img :src="Object2Img" alt="Background object" class="object-2">
+      <img :src="Object3Img" alt="Background object" class="object-3">
+      <img :src="Object4Img" alt="Background object" class="object-4">
+    </div>
     <Header>
       <h1>
         Data Science is a
@@ -8,12 +14,8 @@
       </h1>
     </Header>
     <Section>
-      <div class="object-1"/>
       <Intro/>
     </Section>
-    <img :src="Object2Img" alt="Background object" class="object-2">
-    <img :src="Object3Img" alt="Background object" class="object-3">
-    <img :src="Object4Img" alt="Background object" class="object-4">
     <TicketOpen/>
     <Section>
       <Speakers/>
@@ -78,7 +80,6 @@ export default {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  display: inline-block;
   position: absolute;
   z-index: -2;
   top: 510px;

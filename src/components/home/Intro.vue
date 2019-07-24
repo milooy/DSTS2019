@@ -4,7 +4,7 @@
       <img :src="DSTSEmblemImg" alt="DSTS emblem">
       <div class="paragraph">
         안녕하세요, 선수 여러분.
-        <br />
+        <br>
         <b>데이터 사이언스</b>라는 종목의 팀 스포츠 현장으로 여러분을 모십니다.
         <br>DSTS행사는 데이터 사이언스 업계 내에서 기술에 비해 상대적으로 주목 받지 못했던
         <b>‘협력’의 가치를 재조명</b>합니다.
@@ -49,9 +49,13 @@ export default {
 <style scoped lang="scss">
 .intro-container {
   display: flex;
+  flex-wrap: wrap;
   img {
     margin-right: 45px;
     height: 100%;
+  }
+  .paragraph {
+    max-width: 640px;
   }
 }
 .schedule-section-title {
@@ -70,5 +74,6 @@ export default {
 .schedule-container {
   display: flex;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
 </style>

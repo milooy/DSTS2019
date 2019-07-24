@@ -44,6 +44,10 @@ export default {
   font-size: $font-xxl;
   font-family: "Montserrat", sans-serif;
 
+  .contents {
+    flex-wrap: wrap;
+  }
+
   .left-pane {
     margin-right: 100px;
     text-align: left;

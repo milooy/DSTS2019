@@ -24,6 +24,7 @@ export default {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -42,7 +43,7 @@ body {
 
 .contents {
   padding: 20px 15px 25px;
-  max-width: 1000px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
