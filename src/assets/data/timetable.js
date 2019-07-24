@@ -1,8 +1,3 @@
-import a from '@/assets/speakers/a.jpg';
-import b from '@/assets/speakers/b.jpg';
-import c from '@/assets/speakers/c.jpg';
-
-import TestPlayer from '@/assets/speakers/player/test.png';
 import Player1 from '@/assets/speakers/player/강민구.png';
 import Player2 from '@/assets/speakers/player/강원양.png';
 import Player3 from '@/assets/speakers/player/김인범.png';
@@ -10,14 +5,11 @@ import Player4 from '@/assets/speakers/player/김정화.png';
 import Player5 from '@/assets/speakers/player/김진영.png';
 import Player6 from '@/assets/speakers/player/배준현.png';
 import Player7 from '@/assets/speakers/player/백영민.png';
-import Player8 from '@/assets/speakers/player/백영민.png';
-// import Player8 from '@/assets/speakers/player/변성윤.png';
-import Player9 from '@/assets/speakers/player/백영민.png';
-// import Player9 from '@/assets/speakers/player/송치오.png';
+import Player8 from '@/assets/speakers/player/변성윤.png';
+import Player9 from '@/assets/speakers/player/송치오.png';
 import Player10 from '@/assets/speakers/player/심상훈.png';
 import Player11 from '@/assets/speakers/player/양선영.png';
-// import Player12 from '@/assets/speakers/player/이지혜.png';
-import Player12 from '@/assets/speakers/player/임송이.png';
+import Player12 from '@/assets/speakers/player/이지혜.png';
 import Player13 from '@/assets/speakers/player/임송이.png';
 import Player14 from '@/assets/speakers/player/정산하.png';
 import Player15 from '@/assets/speakers/player/최정윤.png';
@@ -31,20 +23,14 @@ import Original5 from '@/assets/speakers/original/김진영.jpg';
 import Original6 from '@/assets/speakers/original/배준현.jpg';
 import Original7 from '@/assets/speakers/original/백영민.png';
 import Original8 from '@/assets/speakers/original/변성윤.jpg';
-import Original9 from '@/assets/speakers/original/백영민.png';
-// import Original9 from '@/assets/speakers/original/송치오.jpg';
+import Original9 from '@/assets/speakers/original/송치오.jpg';
 import Original10 from '@/assets/speakers/original/심상훈.jpg';
 import Original11 from '@/assets/speakers/original/양선영.jpg';
-// import Original12 from '@/assets/speakers/original/이지혜.jpg';
-import Original12 from '@/assets/speakers/original/임송이.png';
+import Original12 from '@/assets/speakers/original/이지혜.jpeg';
 import Original13 from '@/assets/speakers/original/임송이.png';
 import Original14 from '@/assets/speakers/original/정산하.jpg';
 import Original15 from '@/assets/speakers/original/최정윤.png';
 import Original16 from '@/assets/speakers/original/한성민.png';
-
-
-// import YurimPlayer from '@/assets/speakers/player/yurim.png';
-// import BaseballPlayer from '@/assets/speakers/player/baseball.png';
 
 const list = [
   {

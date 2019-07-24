@@ -42,7 +42,7 @@ export default {
   }
 
   .lbd-logo {
-    height: 90px;
+    height: 70px;
     margin-left: 45px;
   }
   .x-icon {
@@ -50,7 +50,7 @@ export default {
     margin: 0 20px;
   }
   .dataittalks-logo {
-    height: 90px;
+    height: 80px;
   }
 }
 </style>

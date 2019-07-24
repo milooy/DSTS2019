@@ -21,8 +21,6 @@
 </template>
 
 <script>
-import YurimPlayer from "@/assets/speakers/player/yurim.png";
-import backgroundImage from "@/assets/background.png";
 import xIcon from "@/assets/images/xIcon-white.png";
 import sessionList, { getSessionIdx } from "@/assets/data/timetable.js";
 

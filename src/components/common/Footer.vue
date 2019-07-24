@@ -39,12 +39,10 @@
 </template>
 
 <script>
-import backgroundImage from '@/assets/background.png';
 
 export default {
   data() {
     return {
-      backgroundImage,
     };
   },
 };

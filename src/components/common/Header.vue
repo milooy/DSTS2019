@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import backgroundImage from "@/assets/background.png";
 import mainImage from "@/assets/images/main-image.png";
 import Marquee from "@/components/common/Marquee.vue";
 
@@ -24,7 +23,6 @@ export default {
   },
   data() {
     return {
-      backgroundImage,
       mainImage,
     };
   }

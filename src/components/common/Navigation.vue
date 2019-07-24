@@ -6,8 +6,8 @@
           <img :src="DSTSLogo" alt="DSTS logo">
         </div>
       </router-link>
-      <router-link to="/" class="router-link" exact>About</router-link>
-      <router-link to="/timetable" class="router-link">Timetable</router-link>
+      <router-link to="/" class="router-link" exact>ABOUT</router-link>
+      <router-link to="/timetable" class="router-link">TIMETABLE</router-link>
     </div>
     <div>
       <a href="https://festa.io/events/395" class="register-button" target="_blank">REGISTER</a>
@@ -38,7 +38,7 @@ export default {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   justify-content: space-between;
-  padding: 12px 30px;
+  padding: 20px 23px;
   align-items: center;
   position: absolute;
   width: 90%;
@@ -50,34 +50,21 @@ export default {
 
 .logo img {
   cursor: pointer;
-  height: 64px;
+  height: 45px;
   margin-right: 30px;
 }
 
 .router-link {
-  margin: 10px 14px;
+  margin: 5px 14px;
   font-size: $font-m;
-  color: #ffffffc4;
+  color: #D9D8D0;
   text-decoration: none;
-
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: #ffffff8a;
-    vertical-align: middle;
-    margin-right: 3px;
-  }
+  font-weight: 600;
 
   &.router-link-active {
     cursor: default;
     color: white;
-
-    &:before {
-      background: #ea3b6b;
-    }
+    font-weight: 900;
   }
 }
 
