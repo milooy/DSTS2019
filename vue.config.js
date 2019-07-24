@@ -16,4 +16,8 @@ module.exports = {
       },
     },
   },
+  pages: {
+    index: 'src/main.js',
+    timetable: 'src/main.js'
+  }
 };
