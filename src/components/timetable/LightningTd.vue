@@ -50,7 +50,7 @@ export default {
   }
 
   &:hover {
-    background: #e4ff60;
+    background: $primary-light;
 
     .speaker-img {
       filter: none;

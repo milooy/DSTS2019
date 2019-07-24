@@ -8,7 +8,7 @@
         <br>유니폼에 들어가는 회사 로고 외에도 다양한 혜택을 드립니다.
       </p>
       <Button
-        href="https://drive.google.com/file/d/19CDylOUxz4kRQgvPPX6epeSXbAkzEFjk/view"
+        href="https://drive.google.com/file/d/1EgxwwILJEBo3KTR771rg00PFPYblZy8E/view?usp=sharing"
       >
         SEE DETAIL
       </Button>

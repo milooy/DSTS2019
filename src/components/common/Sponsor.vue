@@ -49,8 +49,8 @@ export default {
   }
 
   span {
-    color: #c3c3c3;
-    font-size: 14px;
+    color: $dark-gray;
+    font-size: 18px;
     font-weight: bold;
   }
 }

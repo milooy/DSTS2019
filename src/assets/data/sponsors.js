@@ -22,6 +22,9 @@ import FastcampusLogoWhite from '@/assets/logos/white/fastcampus-white.png';
 import NaverLogo from '@/assets/logos/naver.png';
 import NaverLogoWhite from '@/assets/logos/white/naver-white.png';
 
+import PercentLogo from '@/assets/logos/8percent.png';
+import PercentLogoWhite from '@/assets/logos/white/8percent-white.png';
+
 const sponsors = {
   poweredByList: [
     { name: 'Zepl', image: ZeplLogo, whiteImage: ZeplLogoWhite },
@@ -33,12 +36,14 @@ const sponsors = {
     { name: 'Microsoft', image: MicrosoftLogo, whiteImage: MicrosoftLogoWhite },
   ],
   venueSponsorList: [
+    { name: 'Microsoft', image: MicrosoftLogo, whiteImage: MicrosoftLogoWhite },
   ],
   goldSponsorList: [
     { name: '당근마켓', image: DanggnLogo, whiteImage: DanggnLogoWhite },
     { name: '스캐터랩', image: ScatterLogo, whiteImage: ScatterLogoWhite },
     { name: 'SOCAR', image: SocarLogo, whiteImage: SocarLogoWhite },
     { name: '패스트캠퍼스온라인', image: FastcampusLogo, whiteImage: FastcampusLogoWhite },
+    { name: '8Percent', image: PercentLogo, whiteImage: PercentLogoWhite },
     { name: 'KossLab' },
   ],
   bronzeSponsorList: [

@@ -9,17 +9,15 @@
     <div>
       <div class="footer-title">Site</div>
       <ul>
-        <li>스케쥴</li>
-        <li>타임테이블</li>
-        <li>스피커</li>
-        <li>Code of conduct</li>
+        <li><router-link to="/timetable" class="router-link">타임테이블</router-link></li>
+        <li><a href="https://docs.google.com/document/d/1_G19bFwdZNnw2neSSHF1qzp2YRlFAJNVtroGH5mcgvo/edit?usp=sharing" target="_blank">Code of conduct</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-title">Links</div>
       <ul>
         <li>
-          <a href="https://www.facebook.com/DSTSofficial">티켓 구매</a>
+          <a href="https://festa.io/events/395">티켓 구매</a>
         </li>
         <li>
           <a href="http://www.dataitgirls.com">데잇걸즈 홈페이지</a>
@@ -30,10 +28,10 @@
       </ul>
     </div>
     <div class="footer-icon-container">
-      <a href="https://www.facebook.com/DSTSofficial" :style="{ marginRight: '10px' }">
+      <a href="https://www.facebook.com/DSTSofficial" :style="{ marginRight: '10px' }" target="_blank">
         <i class="fab fa-facebook-square"></i>
       </a>
-      <a href>
+      <a href="https://github.com/milooy/DSTS2019" target="_blank">
         <i class="fab fa-github"></i>
       </a>
     </div>

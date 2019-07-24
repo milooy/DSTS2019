@@ -60,7 +60,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 320px;
+  height: 300px;
   visibility: hidden;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.04) 0px -20px 14px 9px;

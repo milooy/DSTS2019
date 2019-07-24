@@ -4,7 +4,7 @@
     <div class="sponsor-list">
       <div class="sponsor" :style="sponsorStyle" v-for="sponsor in sponsorList" :key="sponsor.name">
         <img v-if="sponsor.image" :src="sponsor.whiteImage">
-        <span v-else>TBD</span>
+        <span v-else>{{sponsor.name}}</span>
       </div>
     </div>
   </div>
@@ -37,23 +37,24 @@ export default {
   text-align: center;
   font-weight: bold;
   margin-right: 20px;
+  color: lightgray;
 }
 .sponsor-section {
   align-items: center;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 .sponsor {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
+  margin-right: 15px;
   img {
     height: 90%;
   }
 
   span {
-    color: #c3c3c3;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 }
 </style>

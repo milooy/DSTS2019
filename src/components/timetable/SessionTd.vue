@@ -34,6 +34,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+td {
+  width: 40%;
+
+  &:hover {
+    background: $primary-light;
+    /* text-decoration: underline; */
+    /* box-shadow: rgba(0, 0, 0, 0.02) -1px 3px 9px 8px; */
+
+    .speaker-img {
+      filter: none;
+    }
+  }
+}
+
 .session-td-inner {
   cursor: pointer;
   display: flex;
@@ -49,16 +63,6 @@ export default {
     background-position: center center;
     margin-right: 7px;
     filter: grayscale(1);
-  }
-
-  &:hover {
-    background: $primary;
-    /* text-decoration: underline; */
-    /* box-shadow: rgba(0, 0, 0, 0.02) -1px 3px 9px 8px; */
-
-    .speaker-img {
-      filter: none;
-    }
   }
 }
 
