@@ -9,18 +9,18 @@
 
 <script>
 // @ is an alias to /src
-import Header from "@/components/common/Header.vue";
-import Table from "@/components/timetable/Table.vue";
+import Header from '@/components/common/Header.vue';
+import Table from '@/components/timetable/Table.vue';
 
 export default {
-  name: "timetable",
+  name: 'timetable',
   components: {
     Table,
-    Header
+    Header,
   },
   data() {
     return {};
-  }
+  },
 };
 </script>
 

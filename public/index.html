@@ -34,6 +34,15 @@
     />
     <script src="https://kit.fontawesome.com/5ddb92f5ba.js"></script>
     <title>DSTS2019: Data Science is a Team Sports!</title>
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <noscript>
