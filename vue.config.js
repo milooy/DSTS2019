@@ -1,5 +1,11 @@
 module.exports = {
+  // build file path
   outputDir: './docs/',
+  // github page file path
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/DSTS2019/'
+    : '/',
+  // css pre-processor
   css: {
     loaderOptions: {
       // pass options to sass-loader
