@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/robots.txt"
   },
   {
-    "revision": "b2e247b8a53ee2d6b44c",
-    "url": "/DSTS2019/js/app.92654d4e.js"
+    "revision": "4c682a8359d75e669482",
+    "url": "/DSTS2019/js/app.78dde481.js"
   },
   {
     "revision": "a6015316ef24e9df8112",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/이지혜.e070bb84.jpeg"
   },
   {
-    "revision": "fbd821c76b851c82a9b3f8817edfcff7",
+    "revision": "3e7e91eace8139c9f355dc60862fb1e5",
     "url": "/DSTS2019/index.html"
   },
   {
@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/dsts-emblem.47cd9496.png"
   },
   {
-    "revision": "b2e247b8a53ee2d6b44c",
-    "url": "/DSTS2019/css/app.0df74f6e.css"
+    "revision": "4c682a8359d75e669482",
+    "url": "/DSTS2019/css/app.90f7b6b4.css"
   },
   {
     "revision": "cc1a765d2a555a4e6074",
