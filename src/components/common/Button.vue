@@ -29,6 +29,7 @@ export default {
   width: 196px;
   height: 48px;
   border-radius: 32px;
+  font-family: "Montserrat", sans-serif;
   background-color: #3ae9d1;
   color: white;
   font-size: $font-m;
