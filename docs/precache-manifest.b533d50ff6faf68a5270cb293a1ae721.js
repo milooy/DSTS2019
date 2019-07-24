@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/최정윤.f3d60c4b.png"
   },
   {
-    "revision": "381f4637ef118d99d2fc",
-    "url": "/DSTS2019/css/app.56df0014.css"
+    "revision": "b66832e5b996b4b7b4e1",
+    "url": "/DSTS2019/css/app.c9f28659.css"
   },
   {
     "revision": "a6015316ef24e9df8112",
@@ -136,12 +136,12 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/김인범.f98a6f6c.png"
   },
   {
-    "revision": "2b4ec46336b9cd5863ac",
-    "url": "/DSTS2019/js/about.ee48becd.js"
+    "revision": "cc1a765d2a555a4e6074",
+    "url": "/DSTS2019/js/about.b3a732dd.js"
   },
   {
-    "revision": "381f4637ef118d99d2fc",
-    "url": "/DSTS2019/js/app.7c2f210f.js"
+    "revision": "b66832e5b996b4b7b4e1",
+    "url": "/DSTS2019/js/app.6d6a5630.js"
   },
   {
     "revision": "1e451e30d4b3390e4b0daf58bbf73351",
@@ -268,11 +268,11 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/a.4d977bd0.jpg"
   },
   {
-    "revision": "9d54bf35a4bef4ff6bf6dc057249832c",
+    "revision": "b50e4b084d92167673c9ae040e0009d9",
     "url": "/DSTS2019/index.html"
   },
   {
-    "revision": "2b4ec46336b9cd5863ac",
-    "url": "/DSTS2019/css/about.dbf245cc.css"
+    "revision": "cc1a765d2a555a4e6074",
+    "url": "/DSTS2019/css/about.31e9feea.css"
   }
 ];
