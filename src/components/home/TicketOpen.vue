@@ -19,7 +19,7 @@ export default {
   data() {
     const today = moment();
     const dday = moment("2019-7-26");
-    const diffDays = dday.diff(today, "days");
+    const diffDays = dday.diff(today, "days") + 1;
     return {
       diffDays,
       TicketImg
