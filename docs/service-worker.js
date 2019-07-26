@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/DSTS2019/precache-manifest.9b54539b6d91190c0185ea8a7fe8d1cd.js"
+  "/DSTS2019/precache-manifest.6b15869bb13808f898672ff618ff5a56.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "conference-template-vue"});

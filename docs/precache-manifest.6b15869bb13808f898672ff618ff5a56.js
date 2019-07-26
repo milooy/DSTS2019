@@ -12,20 +12,20 @@ self.__precacheManifest = [
     "url": "/DSTS2019/robots.txt"
   },
   {
-    "revision": "899ed9fa85b25ea019fe",
-    "url": "/DSTS2019/js/chunk-common.17e0a146.js"
+    "revision": "bf39d1f11dbc1afaced8",
+    "url": "/DSTS2019/js/chunk-common.33dc6787.js"
   },
   {
     "revision": "a6015316ef24e9df8112",
     "url": "/DSTS2019/js/chunk-vendors.7892bc12.js"
   },
   {
-    "revision": "138dc670731d7d5ba2df",
-    "url": "/DSTS2019/js/index.83de9b86.js"
+    "revision": "7687d8923981d8fc6d6d",
+    "url": "/DSTS2019/js/index.7b80357a.js"
   },
   {
-    "revision": "70ee23516bedb91fe688",
-    "url": "/DSTS2019/js/timetable.35871d4f.js"
+    "revision": "c6ca11c1bab1d163f1e2",
+    "url": "/DSTS2019/js/timetable.8ee8ec69.js"
   },
   {
     "revision": "fe876cd53d327fb20f9dc21fd1f93470",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/이지혜.e070bb84.jpeg"
   },
   {
-    "revision": "b14e5a1a1ab564fa7063bb078edd9842",
+    "revision": "05f657dd022eb4c9a1561a537e556a38",
     "url": "/DSTS2019/timetable.html"
   },
   {
@@ -100,15 +100,15 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/배준현.459334bb.png"
   },
   {
-    "revision": "cc1a765d2a555a4e6074",
-    "url": "/DSTS2019/js/about.b3a732dd.js"
+    "revision": "c3935099f3f21f7ec7ca",
+    "url": "/DSTS2019/js/about.c930ae38.js"
   },
   {
     "revision": "4492a223337112670372012df7fdc012",
     "url": "/DSTS2019/img/송치오.4492a223.png"
   },
   {
-    "revision": "5bbf8f806b8fc6d46086d5c7d228c555",
+    "revision": "a7a6e82708814198729177f440593313",
     "url": "/DSTS2019/index.html"
   },
   {
@@ -196,11 +196,11 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/dsts-emblem.47cd9496.png"
   },
   {
-    "revision": "899ed9fa85b25ea019fe",
-    "url": "/DSTS2019/css/chunk-common.27920ee9.css"
+    "revision": "bf39d1f11dbc1afaced8",
+    "url": "/DSTS2019/css/chunk-common.a2b784d6.css"
   },
   {
-    "revision": "cc1a765d2a555a4e6074",
-    "url": "/DSTS2019/css/about.31e9feea.css"
+    "revision": "c3935099f3f21f7ec7ca",
+    "url": "/DSTS2019/css/about.9e1f881a.css"
   }
 ];
