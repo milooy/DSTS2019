@@ -25,6 +25,7 @@ export default {
 body {
   margin: 0;
   overflow-x: hidden;
+  word-break: keep-all;
 }
 
 * {
