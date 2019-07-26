@@ -25,6 +25,21 @@ import NaverLogoWhite from '@/assets/logos/white/naver-white.png';
 import PercentLogo from '@/assets/logos/8percent.png';
 import PercentLogoWhite from '@/assets/logos/white/8percent-white.png';
 
+import MasowareLogo from '@/assets/logos/마소웨어.png';
+import MasowareLogoWhite from '@/assets/logos/white/마소웨어-white.png';
+
+import WikiLogo from '@/assets/logos/위키북스.png';
+import WikiLogoWhite from '@/assets/logos/white/위키북스-white.png';
+
+import InsightLogo from '@/assets/logos/인사이트.png';
+import InsightLogoWhite from '@/assets/logos/white/인사이트-white.png';
+
+import HanbitLogo from '@/assets/logos/한빛.png';
+import HanbitLogoWhite from '@/assets/logos/white/한빛-white.png';
+
+import NipaLogo from '@/assets/logos/nipa.png';
+import NipaLogoWhite from '@/assets/logos/white/nipa-white.png';
+
 const sponsors = {
   poweredByList: [
     { name: 'Zepl', image: ZeplLogo, whiteImage: ZeplLogoWhite },
@@ -44,16 +59,16 @@ const sponsors = {
     { name: 'SOCAR', image: SocarLogo, whiteImage: SocarLogoWhite },
     { name: '패스트캠퍼스온라인', image: FastcampusLogo, whiteImage: FastcampusLogoWhite },
     { name: '8Percent', image: PercentLogo, whiteImage: PercentLogoWhite },
-    { name: 'KossLab' },
+    { name: 'Nipa', image: NipaLogo, whiteImage: NipaLogoWhite },
   ],
   bronzeSponsorList: [
     { name: 'Naver', image: NaverLogo, whiteImage: NaverLogoWhite },
   ],
   mediaSponsorList: [
-    { name: 'Microsoftware' },
-    { name: '한빛미디어' },
-    { name: '위키북스' },
-    { name: '인사이트' },
+    { name: 'Microsoftware', image: MasowareLogo, whiteImage: MasowareLogoWhite },
+    { name: '한빛미디어', image: HanbitLogo, whiteImage: HanbitLogoWhite },
+    { name: '위키북스', image: WikiLogo, whiteImage: WikiLogoWhite },
+    { name: '인사이트', image: InsightLogo, whiteImage: InsightLogoWhite },
   ],
 };
 

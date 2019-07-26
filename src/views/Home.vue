@@ -10,7 +10,7 @@
     <Header>
       <h1>
         Data Science is a
-        <br>Team Sports!
+        <br>Team Sport!
       </h1>
     </Header>
     <Section>

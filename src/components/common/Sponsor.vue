@@ -45,7 +45,8 @@ export default {
   justify-content: center;
   align-items: center;
   img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   span {
