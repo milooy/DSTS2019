@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/robots.txt"
   },
   {
-    "revision": "e40cd29967fa71490cc7",
-    "url": "/DSTS2019/js/chunk-common.e12ff9ed.js"
+    "revision": "375f2b73a6f95ebae7dc",
+    "url": "/DSTS2019/js/chunk-common.80d20719.js"
   },
   {
     "revision": "a6015316ef24e9df8112",
@@ -64,6 +64,10 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/백영민.b2807045.png"
   },
   {
+    "revision": "b1772fc4e29a2be9d926a56c62a5af9e",
+    "url": "/DSTS2019/img/nipa.b1772fc4.png"
+  },
+  {
     "revision": "5bf5a815bb7f6982251ff6b98aa23dab",
     "url": "/DSTS2019/img/배준현.5bf5a815.jpg"
   },
@@ -72,7 +76,7 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/이지혜.e070bb84.jpeg"
   },
   {
-    "revision": "a883ee3da8b398759c74b7dcf31e8f91",
+    "revision": "86e9927575969d52204abfde28807b71",
     "url": "/DSTS2019/timetable.html"
   },
   {
@@ -108,7 +112,7 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/송치오.4492a223.png"
   },
   {
-    "revision": "ca76be177b1eb895793f6eaeeca36809",
+    "revision": "a17af300afbf2f8d601d4ac1a6d33e4e",
     "url": "/DSTS2019/index.html"
   },
   {
@@ -196,8 +200,8 @@ self.__precacheManifest = [
     "url": "/DSTS2019/img/dsts-emblem.47cd9496.png"
   },
   {
-    "revision": "e40cd29967fa71490cc7",
-    "url": "/DSTS2019/css/chunk-common.a2b784d6.css"
+    "revision": "375f2b73a6f95ebae7dc",
+    "url": "/DSTS2019/css/chunk-common.4c28f56e.css"
   },
   {
     "revision": "c3935099f3f21f7ec7ca",
