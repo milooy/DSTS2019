@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "git subtree push --prefix docs origin gh-pages"
+    "commit": "git add docs -f && git commit -m 'Subtree commit'",
+    "deploy": "git push origin `git subtree split --prefix docs master`:gh-pages --force"
   },
   "dependencies": {
     "core-js": "^2.6.5",
